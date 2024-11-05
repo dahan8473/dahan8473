@@ -1,9 +1,9 @@
-# Hi there, I'm David Liu 👋
+# Hellooo, I'm David Liu 👋
 
-## I'm a Developer, Creator, and Lifelong Learner!
+## !
 
-- 🔭 I’m currently working on AI Stock Predictor.
-- 🌱 I’m currently learning Unity, JavaFx, C#.
-- 📫 How to reach me: dliu468@uwo.ca or @dahanstagram on instagram.
+- 🔭 I’m currently developing a full stack project.
+- 🌱 I’m currently learning REST and back end stuffs.
+- 📫 How to reach me: dliu468@uwo.ca or 7789810189.
 
 
