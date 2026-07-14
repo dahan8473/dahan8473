@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 350">
+  <style>
+    .lab { font-family:-apple-system,'Segoe UI',system-ui,sans-serif; font-weight:700; font-size:15px; fill:#e6edf3; }
+    .val { font-family:ui-monospace,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace; font-size:15px; fill:#c9d1d9; }
+    .logo{ font-family:ui-monospace,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace; font-weight:700; font-size:22px; fill:#ffffff; }
+  </style>
+  <rect x="8" y="8" width="944" height="334" rx="18" fill="#05070a" stroke="#30363d"/>
+
+  <text class="logo" x="48" y="70">▞▚ tethos</text>
+  <line x1="230" y1="36" x2="230" y2="88" stroke="#30363d"/>
+  <text class="lab" x="260" y="52">Org</text>
+  <text class="val" x="260" y="76">~tethos-association</text>
+  <line x1="560" y1="36" x2="560" y2="88" stroke="#30363d"/>
+  <text class="lab" x="590" y="52">Class</text>
+  <text class="val" x="590" y="76">Nonprofit · federally incorporated</text>
+
+  <line x1="32" y1="108" x2="928" y2="108" stroke="#21262d"/>
+
+  <text class="lab" x="48" y="140">Mission</text>
+  <text class="val" x="48" y="163">students building free software for nonprofits</text>
+
+  <text class="lab" x="48" y="196">Fleet</text>
+  <text class="val" x="48" y="219">100+ student devs · 2 chapters (western · ubc) · 20+ projects · $300k+ saved</text>
+
+  <text class="lab" x="48" y="252">Clients</text>
+  <text class="val" x="48" y="275">world vision · plan international · fund homecare · london children's museum</text>
+
+  <line x1="32" y1="295" x2="928" y2="295" stroke="#21262d"/>
+
+  <text class="lab" x="48" y="318">Role</text>
+  <text class="val" x="48" y="336">founder &amp; president</text>
+  <line x1="268" y1="306" x2="268" y2="340" stroke="#30363d"/>
+  <text class="lab" x="288" y="318">Incorporated</text>
+  <text class="val" x="288" y="336">10/05/2025</text>
+  <line x1="508" y1="306" x2="508" y2="340" stroke="#30363d"/>
+  <text class="lab" x="528" y="318">Status</text>
+  <text class="val" x="528" y="336">active</text>
+  <line x1="748" y1="306" x2="748" y2="340" stroke="#30363d"/>
+  <text class="lab" x="768" y="318">Endpoint</text>
+  <text class="val" x="768" y="336">tethos.ca</text>
+</svg>

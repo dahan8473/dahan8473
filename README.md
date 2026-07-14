@@ -1,57 +1,45 @@
-# David Liu
+<img src="assets/terminal-banner.svg" width="100%" alt="david liu · swe @ western · founder @ tethos" />
 
-Software Engineering + Ivey HBA dual degree @ Western University.
-Founder & President of [Tethos](https://tethos.ca), a federally incorporated nonprofit where student developers build free software for other nonprofits.
+### `$ whoami`
 
-**I build for purpose, not for profit.**
+- swe @ western university · 4th year
+- currently: swe intern @ [j.d. power](https://www.jdpower.com)
+- founder & president @ [tethos](https://tethos.ca) · student devs building free software for nonprofits
+- prev: engineering intern @ modern engineering
 
-## Currently building
+### `$ ps aux | grep building`
 
-- **BumBot** (private beta): job application automation SaaS. Scrapes postings from Greenhouse, Lever, and YC, scores fit with an LLM pipeline, writes cover letters in your own voice, and applies with Playwright. Next.js, Prisma, Playwright, Claude API.
-- **[clawdash](https://github.com/dahan8473/clawdash)**: terminal-aesthetic mission control for OpenClaw, my always-on AI agent running on a Mac Mini. Live WebSocket feed of agent sessions, cron jobs, memory, and token spend.
-- **[tethos.ca](https://tethos.ca)**: the Tethos platform. Solo-built. Next.js, FastAPI, Supabase, React Three Fiber. 400+ users, 22 API endpoints, a 3D dashboard, and a RAG assistant for org knowledge.
+- **bumbot** · job application automation saas · scrapes postings, scores fit, writes cover letters, auto-applies · private beta
+- **[clawdash](https://github.com/dahan8473/clawdash)** · mission control for my always-on ai agent (mac mini) · live websocket feed of sessions, cron, token spend
+- **[tethos.ca](https://tethos.ca)** · solo-built org platform · 400+ users · 22 api endpoints · 3d dashboard · rag assistant
 
-## Tethos: Tech for Social Impact
+### `$ cat tethos.id`
 
-I founded Tethos around one question: why should nonprofits pay agency prices for software that students would kill to build?
+<img src="assets/tethos-card.svg" width="100%" alt="tethos: 100+ student devs, 2 chapters, 20+ projects, $300k+ saved for nonprofits" />
 
-- 100+ student developers across 2 chapters (Western, UBC)
-- 20+ pro-bono projects shipped
-- $300k+ in development costs saved for nonprofit clients
-- Clients include World Vision, Plan International, Fund Homecare, and the London Children's Museum
+- most client work is private in [uwo-tsi](https://github.com/UWO-TSI) · multi-agent research pipeline (world vision) · grant db (plan international)
+- public: [tsi-website](https://github.com/UWO-TSI/tsi-website) · [fundhomecare grant aggregator](https://github.com/UWO-TSI/FundhomecareGrantAggregator)
 
-Most client work lives in private repos in the [UWO-TSI org](https://github.com/UWO-TSI), including a multi-agent research pipeline for World Vision and a grant database for Plan International. Public examples: [tsi-website](https://github.com/UWO-TSI/tsi-website) and [FundhomecareGrantAggregator](https://github.com/UWO-TSI/FundhomecareGrantAggregator).
+### `$ ls ~/projects`
 
-## Projects
+- [tsi-website](https://github.com/UWO-TSI/tsi-website) · the tethos platform · next.js · supabase · fastapi · react three fiber
+- [deja-view](https://github.com/dahan8473/deja-view) · pinterest saves become 3d objects in your room · hackathon
+- [biopilot](https://github.com/dahan8473/biopilot) · ai drone crop analytics · computer vision heatmaps · hackathon
+- kunlun · bilingual cultural fashion brand site · next.js · private
+- [wec_24](https://github.com/dahan8473/WEC_24) · western engineering competition 2024 · unity · c#
 
-| Project | What it is | Stack |
-|---|---|---|
-| [tsi-website](https://github.com/UWO-TSI/tsi-website) | tethos.ca, the full Tethos platform | Next.js, TypeScript, Supabase, FastAPI, React Three Fiber |
-| BumBot (private beta) | Job application automation SaaS | Next.js, Prisma, Playwright, Claude API |
-| [clawdash](https://github.com/dahan8473/clawdash) | Mission control dashboard for an always-on AI agent | Next.js, React, Tailwind, WebSockets |
-| [deja-view](https://github.com/dahan8473/deja-view) | Turns Pinterest saves into 3D objects in your room (hackathon) | TypeScript, React, 3D rendering |
-| [bioPilot](https://github.com/dahan8473/biopilot) | Drone crop analytics with computer vision (hackathon) | React, TypeScript, deck.gl, MapLibre |
-| Kunlun (private) | Bilingual cultural fashion brand site, lore-anchored design | Next.js 15, TypeScript |
-| [WEC_24](https://github.com/dahan8473/WEC_24) | Western Engineering Competition 2024 entry | Unity, C# |
+### `$ cat stack.txt`
 
-## Stack
+```text
+┌────────────┬────────────────────────────────────────────────┐
+│ languages  │ typescript · python · c# · java · sql          │
+│ frontend   │ react · next.js · tailwind · three.js / r3f    │
+│ backend    │ fastapi · prisma · supabase · postgres         │
+│ ai/agents  │ claude api · rag pipelines · playwright · mcp  │
+│ tools      │ vercel · docker · unity · figma                │
+└────────────┴────────────────────────────────────────────────┘
+```
 
-- **Daily drivers:** TypeScript, React/Next.js, Python, PostgreSQL/Supabase, Tailwind
-- **Also ship with:** FastAPI, Prisma, Playwright, Unity/C#, Java
-- **AI tooling:** Claude API, agent orchestration, RAG pipelines, browser automation
+### `$ ping david`
 
-## Experience
-
-- SWE Intern @ J.D. Power (2025-2026)
-- Engineering Intern @ Modern Engineering (2024)
-- Founder & President @ Tethos Association
-
-## Outside the terminal
-
-Classical guitar (performed at Carnegie Hall), Muay Thai, fashion.
-
-## Contact
-
-- Email: davidliu8473@gmail.com
-- LinkedIn: [linkedin.com/in/davidmakesmoves](https://linkedin.com/in/davidmakesmoves)
-- Web: [tethos.ca](https://tethos.ca) · [dahan8473.github.io](https://dahan8473.github.io)
+[gmail](mailto:davidliu8473@gmail.com) · [linkedin](https://linkedin.com/in/davidmakesmoves) · [davidliu.work](https://davidliu.work) · [tethos.ca](https://tethos.ca)
