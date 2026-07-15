@@ -4,7 +4,7 @@
     .dim  { fill:#57606a; font-size:13px; }
     .menu { fill:#8c959f; font-size:12px; letter-spacing:2px; }
     .sel  { fill:#116329; font-size:12px; letter-spacing:2px; }
-    .px   { fill:#1a7f37; opacity:0; animation:on .01s steps(1) forwards; }
+    .px   { fill:#1a7f37; }
     .ok   { fill:#116329; font-size:14px; opacity:0; animation:on .01s steps(1) forwards; }
     .okb  { fill:#2da44e; }
     .d1   { animation-delay:1.0s; }
@@ -34,6 +34,11 @@
     <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="3"/>
     </filter>
+    <clipPath id="reveal">
+      <rect x="40" y="70" width="880" height="150">
+        <animate attributeName="width" values="0;880" dur=".9s" begin="0.3s" fill="freeze"/>
+      </rect>
+    </clipPath>
     <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#1a7f37" stop-opacity="0"/>
       <stop offset=".5" stop-color="#1a7f37" stop-opacity=".06"/>
@@ -52,131 +57,133 @@
   <text class="menu" x="924" y="62" text-anchor="end" xml:space="preserve">MEM TEST: 640K OK</text>
 
   <g class="glitch">
+    <g clip-path="url(#reveal)">
 
     <g id="pxname">
-    <rect class="px" x="46" y="80" width="15" height="15" rx="2" style="animation-delay:0ms"/>
-    <rect class="px" x="63" y="80" width="15" height="15" rx="2" style="animation-delay:14ms"/>
-    <rect class="px" x="80" y="80" width="15" height="15" rx="2" style="animation-delay:28ms"/>
-    <rect class="px" x="97" y="80" width="15" height="15" rx="2" style="animation-delay:42ms"/>
-    <rect class="px" x="46" y="97" width="15" height="15" rx="2" style="animation-delay:8ms"/>
-    <rect class="px" x="114" y="97" width="15" height="15" rx="2" style="animation-delay:64ms"/>
-    <rect class="px" x="46" y="114" width="15" height="15" rx="2" style="animation-delay:16ms"/>
-    <rect class="px" x="114" y="114" width="15" height="15" rx="2" style="animation-delay:72ms"/>
-    <rect class="px" x="46" y="131" width="15" height="15" rx="2" style="animation-delay:24ms"/>
-    <rect class="px" x="114" y="131" width="15" height="15" rx="2" style="animation-delay:80ms"/>
-    <rect class="px" x="46" y="148" width="15" height="15" rx="2" style="animation-delay:32ms"/>
-    <rect class="px" x="114" y="148" width="15" height="15" rx="2" style="animation-delay:88ms"/>
-    <rect class="px" x="46" y="165" width="15" height="15" rx="2" style="animation-delay:40ms"/>
-    <rect class="px" x="114" y="165" width="15" height="15" rx="2" style="animation-delay:96ms"/>
-    <rect class="px" x="46" y="182" width="15" height="15" rx="2" style="animation-delay:48ms"/>
-    <rect class="px" x="63" y="182" width="15" height="15" rx="2" style="animation-delay:62ms"/>
-    <rect class="px" x="80" y="182" width="15" height="15" rx="2" style="animation-delay:76ms"/>
-    <rect class="px" x="97" y="182" width="15" height="15" rx="2" style="animation-delay:90ms"/>
-    <rect class="px" x="165" y="80" width="15" height="15" rx="2" style="animation-delay:98ms"/>
-    <rect class="px" x="182" y="80" width="15" height="15" rx="2" style="animation-delay:112ms"/>
-    <rect class="px" x="199" y="80" width="15" height="15" rx="2" style="animation-delay:126ms"/>
-    <rect class="px" x="148" y="97" width="15" height="15" rx="2" style="animation-delay:92ms"/>
-    <rect class="px" x="216" y="97" width="15" height="15" rx="2" style="animation-delay:148ms"/>
-    <rect class="px" x="148" y="114" width="15" height="15" rx="2" style="animation-delay:100ms"/>
-    <rect class="px" x="216" y="114" width="15" height="15" rx="2" style="animation-delay:156ms"/>
-    <rect class="px" x="148" y="131" width="15" height="15" rx="2" style="animation-delay:108ms"/>
-    <rect class="px" x="165" y="131" width="15" height="15" rx="2" style="animation-delay:122ms"/>
-    <rect class="px" x="182" y="131" width="15" height="15" rx="2" style="animation-delay:136ms"/>
-    <rect class="px" x="199" y="131" width="15" height="15" rx="2" style="animation-delay:150ms"/>
-    <rect class="px" x="216" y="131" width="15" height="15" rx="2" style="animation-delay:164ms"/>
-    <rect class="px" x="148" y="148" width="15" height="15" rx="2" style="animation-delay:116ms"/>
-    <rect class="px" x="216" y="148" width="15" height="15" rx="2" style="animation-delay:172ms"/>
-    <rect class="px" x="148" y="165" width="15" height="15" rx="2" style="animation-delay:124ms"/>
-    <rect class="px" x="216" y="165" width="15" height="15" rx="2" style="animation-delay:180ms"/>
-    <rect class="px" x="148" y="182" width="15" height="15" rx="2" style="animation-delay:132ms"/>
-    <rect class="px" x="216" y="182" width="15" height="15" rx="2" style="animation-delay:188ms"/>
-    <rect class="px" x="250" y="80" width="15" height="15" rx="2" style="animation-delay:168ms"/>
-    <rect class="px" x="318" y="80" width="15" height="15" rx="2" style="animation-delay:224ms"/>
-    <rect class="px" x="250" y="97" width="15" height="15" rx="2" style="animation-delay:176ms"/>
-    <rect class="px" x="318" y="97" width="15" height="15" rx="2" style="animation-delay:232ms"/>
-    <rect class="px" x="250" y="114" width="15" height="15" rx="2" style="animation-delay:184ms"/>
-    <rect class="px" x="318" y="114" width="15" height="15" rx="2" style="animation-delay:240ms"/>
-    <rect class="px" x="250" y="131" width="15" height="15" rx="2" style="animation-delay:192ms"/>
-    <rect class="px" x="318" y="131" width="15" height="15" rx="2" style="animation-delay:248ms"/>
-    <rect class="px" x="250" y="148" width="15" height="15" rx="2" style="animation-delay:200ms"/>
-    <rect class="px" x="318" y="148" width="15" height="15" rx="2" style="animation-delay:256ms"/>
-    <rect class="px" x="267" y="165" width="15" height="15" rx="2" style="animation-delay:222ms"/>
-    <rect class="px" x="301" y="165" width="15" height="15" rx="2" style="animation-delay:250ms"/>
-    <rect class="px" x="284" y="182" width="15" height="15" rx="2" style="animation-delay:244ms"/>
-    <rect class="px" x="352" y="80" width="15" height="15" rx="2" style="animation-delay:252ms"/>
-    <rect class="px" x="369" y="80" width="15" height="15" rx="2" style="animation-delay:266ms"/>
-    <rect class="px" x="386" y="80" width="15" height="15" rx="2" style="animation-delay:280ms"/>
-    <rect class="px" x="403" y="80" width="15" height="15" rx="2" style="animation-delay:294ms"/>
-    <rect class="px" x="420" y="80" width="15" height="15" rx="2" style="animation-delay:308ms"/>
-    <rect class="px" x="386" y="97" width="15" height="15" rx="2" style="animation-delay:288ms"/>
-    <rect class="px" x="386" y="114" width="15" height="15" rx="2" style="animation-delay:296ms"/>
-    <rect class="px" x="386" y="131" width="15" height="15" rx="2" style="animation-delay:304ms"/>
-    <rect class="px" x="386" y="148" width="15" height="15" rx="2" style="animation-delay:312ms"/>
-    <rect class="px" x="386" y="165" width="15" height="15" rx="2" style="animation-delay:320ms"/>
-    <rect class="px" x="352" y="182" width="15" height="15" rx="2" style="animation-delay:300ms"/>
-    <rect class="px" x="369" y="182" width="15" height="15" rx="2" style="animation-delay:314ms"/>
-    <rect class="px" x="386" y="182" width="15" height="15" rx="2" style="animation-delay:328ms"/>
-    <rect class="px" x="403" y="182" width="15" height="15" rx="2" style="animation-delay:342ms"/>
-    <rect class="px" x="420" y="182" width="15" height="15" rx="2" style="animation-delay:356ms"/>
-    <rect class="px" x="454" y="80" width="15" height="15" rx="2" style="animation-delay:336ms"/>
-    <rect class="px" x="471" y="80" width="15" height="15" rx="2" style="animation-delay:350ms"/>
-    <rect class="px" x="488" y="80" width="15" height="15" rx="2" style="animation-delay:364ms"/>
-    <rect class="px" x="505" y="80" width="15" height="15" rx="2" style="animation-delay:378ms"/>
-    <rect class="px" x="454" y="97" width="15" height="15" rx="2" style="animation-delay:344ms"/>
-    <rect class="px" x="522" y="97" width="15" height="15" rx="2" style="animation-delay:400ms"/>
-    <rect class="px" x="454" y="114" width="15" height="15" rx="2" style="animation-delay:352ms"/>
-    <rect class="px" x="522" y="114" width="15" height="15" rx="2" style="animation-delay:408ms"/>
-    <rect class="px" x="454" y="131" width="15" height="15" rx="2" style="animation-delay:360ms"/>
-    <rect class="px" x="522" y="131" width="15" height="15" rx="2" style="animation-delay:416ms"/>
-    <rect class="px" x="454" y="148" width="15" height="15" rx="2" style="animation-delay:368ms"/>
-    <rect class="px" x="522" y="148" width="15" height="15" rx="2" style="animation-delay:424ms"/>
-    <rect class="px" x="454" y="165" width="15" height="15" rx="2" style="animation-delay:376ms"/>
-    <rect class="px" x="522" y="165" width="15" height="15" rx="2" style="animation-delay:432ms"/>
-    <rect class="px" x="454" y="182" width="15" height="15" rx="2" style="animation-delay:384ms"/>
-    <rect class="px" x="471" y="182" width="15" height="15" rx="2" style="animation-delay:398ms"/>
-    <rect class="px" x="488" y="182" width="15" height="15" rx="2" style="animation-delay:412ms"/>
-    <rect class="px" x="505" y="182" width="15" height="15" rx="2" style="animation-delay:426ms"/>
-    <rect class="px" x="624" y="80" width="15" height="15" rx="2" style="animation-delay:476ms"/>
-    <rect class="px" x="624" y="97" width="15" height="15" rx="2" style="animation-delay:484ms"/>
-    <rect class="px" x="624" y="114" width="15" height="15" rx="2" style="animation-delay:492ms"/>
-    <rect class="px" x="624" y="131" width="15" height="15" rx="2" style="animation-delay:500ms"/>
-    <rect class="px" x="624" y="148" width="15" height="15" rx="2" style="animation-delay:508ms"/>
-    <rect class="px" x="624" y="165" width="15" height="15" rx="2" style="animation-delay:516ms"/>
-    <rect class="px" x="624" y="182" width="15" height="15" rx="2" style="animation-delay:524ms"/>
-    <rect class="px" x="641" y="182" width="15" height="15" rx="2" style="animation-delay:538ms"/>
-    <rect class="px" x="658" y="182" width="15" height="15" rx="2" style="animation-delay:552ms"/>
-    <rect class="px" x="675" y="182" width="15" height="15" rx="2" style="animation-delay:566ms"/>
-    <rect class="px" x="692" y="182" width="15" height="15" rx="2" style="animation-delay:580ms"/>
-    <rect class="px" x="726" y="80" width="15" height="15" rx="2" style="animation-delay:560ms"/>
-    <rect class="px" x="743" y="80" width="15" height="15" rx="2" style="animation-delay:574ms"/>
-    <rect class="px" x="760" y="80" width="15" height="15" rx="2" style="animation-delay:588ms"/>
-    <rect class="px" x="777" y="80" width="15" height="15" rx="2" style="animation-delay:602ms"/>
-    <rect class="px" x="794" y="80" width="15" height="15" rx="2" style="animation-delay:616ms"/>
-    <rect class="px" x="760" y="97" width="15" height="15" rx="2" style="animation-delay:596ms"/>
-    <rect class="px" x="760" y="114" width="15" height="15" rx="2" style="animation-delay:604ms"/>
-    <rect class="px" x="760" y="131" width="15" height="15" rx="2" style="animation-delay:612ms"/>
-    <rect class="px" x="760" y="148" width="15" height="15" rx="2" style="animation-delay:620ms"/>
-    <rect class="px" x="760" y="165" width="15" height="15" rx="2" style="animation-delay:628ms"/>
-    <rect class="px" x="726" y="182" width="15" height="15" rx="2" style="animation-delay:608ms"/>
-    <rect class="px" x="743" y="182" width="15" height="15" rx="2" style="animation-delay:622ms"/>
-    <rect class="px" x="760" y="182" width="15" height="15" rx="2" style="animation-delay:636ms"/>
-    <rect class="px" x="777" y="182" width="15" height="15" rx="2" style="animation-delay:650ms"/>
-    <rect class="px" x="794" y="182" width="15" height="15" rx="2" style="animation-delay:664ms"/>
-    <rect class="px" x="828" y="80" width="15" height="15" rx="2" style="animation-delay:644ms"/>
-    <rect class="px" x="896" y="80" width="15" height="15" rx="2" style="animation-delay:700ms"/>
-    <rect class="px" x="828" y="97" width="15" height="15" rx="2" style="animation-delay:652ms"/>
-    <rect class="px" x="896" y="97" width="15" height="15" rx="2" style="animation-delay:708ms"/>
-    <rect class="px" x="828" y="114" width="15" height="15" rx="2" style="animation-delay:660ms"/>
-    <rect class="px" x="896" y="114" width="15" height="15" rx="2" style="animation-delay:716ms"/>
-    <rect class="px" x="828" y="131" width="15" height="15" rx="2" style="animation-delay:668ms"/>
-    <rect class="px" x="896" y="131" width="15" height="15" rx="2" style="animation-delay:724ms"/>
-    <rect class="px" x="828" y="148" width="15" height="15" rx="2" style="animation-delay:676ms"/>
-    <rect class="px" x="896" y="148" width="15" height="15" rx="2" style="animation-delay:732ms"/>
-    <rect class="px" x="828" y="165" width="15" height="15" rx="2" style="animation-delay:684ms"/>
-    <rect class="px" x="896" y="165" width="15" height="15" rx="2" style="animation-delay:740ms"/>
-    <rect class="px" x="845" y="182" width="15" height="15" rx="2" style="animation-delay:706ms"/>
-    <rect class="px" x="862" y="182" width="15" height="15" rx="2" style="animation-delay:720ms"/>
-    <rect class="px" x="879" y="182" width="15" height="15" rx="2" style="animation-delay:734ms"/>
+    <rect class="px" x="55" y="80" width="15" height="15" rx="2"/>
+    <rect class="px" x="72" y="80" width="15" height="15" rx="2"/>
+    <rect class="px" x="89" y="80" width="15" height="15" rx="2"/>
+    <rect class="px" x="106" y="80" width="15" height="15" rx="2"/>
+    <rect class="px" x="55" y="97" width="15" height="15" rx="2"/>
+    <rect class="px" x="123" y="97" width="15" height="15" rx="2"/>
+    <rect class="px" x="55" y="114" width="15" height="15" rx="2"/>
+    <rect class="px" x="123" y="114" width="15" height="15" rx="2"/>
+    <rect class="px" x="55" y="131" width="15" height="15" rx="2"/>
+    <rect class="px" x="123" y="131" width="15" height="15" rx="2"/>
+    <rect class="px" x="55" y="148" width="15" height="15" rx="2"/>
+    <rect class="px" x="123" y="148" width="15" height="15" rx="2"/>
+    <rect class="px" x="55" y="165" width="15" height="15" rx="2"/>
+    <rect class="px" x="123" y="165" width="15" height="15" rx="2"/>
+    <rect class="px" x="55" y="182" width="15" height="15" rx="2"/>
+    <rect class="px" x="72" y="182" width="15" height="15" rx="2"/>
+    <rect class="px" x="89" y="182" width="15" height="15" rx="2"/>
+    <rect class="px" x="106" y="182" width="15" height="15" rx="2"/>
+    <rect class="px" x="174" y="80" width="15" height="15" rx="2"/>
+    <rect class="px" x="191" y="80" width="15" height="15" rx="2"/>
+    <rect class="px" x="208" y="80" width="15" height="15" rx="2"/>
+    <rect class="px" x="157" y="97" width="15" height="15" rx="2"/>
+    <rect class="px" x="225" y="97" width="15" height="15" rx="2"/>
+    <rect class="px" x="157" y="114" width="15" height="15" rx="2"/>
+    <rect class="px" x="225" y="114" width="15" height="15" rx="2"/>
+    <rect class="px" x="157" y="131" width="15" height="15" rx="2"/>
+    <rect class="px" x="174" y="131" width="15" height="15" rx="2"/>
+    <rect class="px" x="191" y="131" width="15" height="15" rx="2"/>
+    <rect class="px" x="208" y="131" width="15" height="15" rx="2"/>
+    <rect class="px" x="225" y="131" width="15" height="15" rx="2"/>
+    <rect class="px" x="157" y="148" width="15" height="15" rx="2"/>
+    <rect class="px" x="225" y="148" width="15" height="15" rx="2"/>
+    <rect class="px" x="157" y="165" width="15" height="15" rx="2"/>
+    <rect class="px" x="225" y="165" width="15" height="15" rx="2"/>
+    <rect class="px" x="157" y="182" width="15" height="15" rx="2"/>
+    <rect class="px" x="225" y="182" width="15" height="15" rx="2"/>
+    <rect class="px" x="259" y="80" width="15" height="15" rx="2"/>
+    <rect class="px" x="327" y="80" width="15" height="15" rx="2"/>
+    <rect class="px" x="259" y="97" width="15" height="15" rx="2"/>
+    <rect class="px" x="327" y="97" width="15" height="15" rx="2"/>
+    <rect class="px" x="259" y="114" width="15" height="15" rx="2"/>
+    <rect class="px" x="327" y="114" width="15" height="15" rx="2"/>
+    <rect class="px" x="259" y="131" width="15" height="15" rx="2"/>
+    <rect class="px" x="327" y="131" width="15" height="15" rx="2"/>
+    <rect class="px" x="259" y="148" width="15" height="15" rx="2"/>
+    <rect class="px" x="327" y="148" width="15" height="15" rx="2"/>
+    <rect class="px" x="276" y="165" width="15" height="15" rx="2"/>
+    <rect class="px" x="310" y="165" width="15" height="15" rx="2"/>
+    <rect class="px" x="293" y="182" width="15" height="15" rx="2"/>
+    <rect class="px" x="361" y="80" width="15" height="15" rx="2"/>
+    <rect class="px" x="378" y="80" width="15" height="15" rx="2"/>
+    <rect class="px" x="395" y="80" width="15" height="15" rx="2"/>
+    <rect class="px" x="412" y="80" width="15" height="15" rx="2"/>
+    <rect class="px" x="429" y="80" width="15" height="15" rx="2"/>
+    <rect class="px" x="395" y="97" width="15" height="15" rx="2"/>
+    <rect class="px" x="395" y="114" width="15" height="15" rx="2"/>
+    <rect class="px" x="395" y="131" width="15" height="15" rx="2"/>
+    <rect class="px" x="395" y="148" width="15" height="15" rx="2"/>
+    <rect class="px" x="395" y="165" width="15" height="15" rx="2"/>
+    <rect class="px" x="361" y="182" width="15" height="15" rx="2"/>
+    <rect class="px" x="378" y="182" width="15" height="15" rx="2"/>
+    <rect class="px" x="395" y="182" width="15" height="15" rx="2"/>
+    <rect class="px" x="412" y="182" width="15" height="15" rx="2"/>
+    <rect class="px" x="429" y="182" width="15" height="15" rx="2"/>
+    <rect class="px" x="463" y="80" width="15" height="15" rx="2"/>
+    <rect class="px" x="480" y="80" width="15" height="15" rx="2"/>
+    <rect class="px" x="497" y="80" width="15" height="15" rx="2"/>
+    <rect class="px" x="514" y="80" width="15" height="15" rx="2"/>
+    <rect class="px" x="463" y="97" width="15" height="15" rx="2"/>
+    <rect class="px" x="531" y="97" width="15" height="15" rx="2"/>
+    <rect class="px" x="463" y="114" width="15" height="15" rx="2"/>
+    <rect class="px" x="531" y="114" width="15" height="15" rx="2"/>
+    <rect class="px" x="463" y="131" width="15" height="15" rx="2"/>
+    <rect class="px" x="531" y="131" width="15" height="15" rx="2"/>
+    <rect class="px" x="463" y="148" width="15" height="15" rx="2"/>
+    <rect class="px" x="531" y="148" width="15" height="15" rx="2"/>
+    <rect class="px" x="463" y="165" width="15" height="15" rx="2"/>
+    <rect class="px" x="531" y="165" width="15" height="15" rx="2"/>
+    <rect class="px" x="463" y="182" width="15" height="15" rx="2"/>
+    <rect class="px" x="480" y="182" width="15" height="15" rx="2"/>
+    <rect class="px" x="497" y="182" width="15" height="15" rx="2"/>
+    <rect class="px" x="514" y="182" width="15" height="15" rx="2"/>
+    <rect class="px" x="616" y="80" width="15" height="15" rx="2"/>
+    <rect class="px" x="616" y="97" width="15" height="15" rx="2"/>
+    <rect class="px" x="616" y="114" width="15" height="15" rx="2"/>
+    <rect class="px" x="616" y="131" width="15" height="15" rx="2"/>
+    <rect class="px" x="616" y="148" width="15" height="15" rx="2"/>
+    <rect class="px" x="616" y="165" width="15" height="15" rx="2"/>
+    <rect class="px" x="616" y="182" width="15" height="15" rx="2"/>
+    <rect class="px" x="633" y="182" width="15" height="15" rx="2"/>
+    <rect class="px" x="650" y="182" width="15" height="15" rx="2"/>
+    <rect class="px" x="667" y="182" width="15" height="15" rx="2"/>
+    <rect class="px" x="684" y="182" width="15" height="15" rx="2"/>
+    <rect class="px" x="718" y="80" width="15" height="15" rx="2"/>
+    <rect class="px" x="735" y="80" width="15" height="15" rx="2"/>
+    <rect class="px" x="752" y="80" width="15" height="15" rx="2"/>
+    <rect class="px" x="769" y="80" width="15" height="15" rx="2"/>
+    <rect class="px" x="786" y="80" width="15" height="15" rx="2"/>
+    <rect class="px" x="752" y="97" width="15" height="15" rx="2"/>
+    <rect class="px" x="752" y="114" width="15" height="15" rx="2"/>
+    <rect class="px" x="752" y="131" width="15" height="15" rx="2"/>
+    <rect class="px" x="752" y="148" width="15" height="15" rx="2"/>
+    <rect class="px" x="752" y="165" width="15" height="15" rx="2"/>
+    <rect class="px" x="718" y="182" width="15" height="15" rx="2"/>
+    <rect class="px" x="735" y="182" width="15" height="15" rx="2"/>
+    <rect class="px" x="752" y="182" width="15" height="15" rx="2"/>
+    <rect class="px" x="769" y="182" width="15" height="15" rx="2"/>
+    <rect class="px" x="786" y="182" width="15" height="15" rx="2"/>
+    <rect class="px" x="820" y="80" width="15" height="15" rx="2"/>
+    <rect class="px" x="888" y="80" width="15" height="15" rx="2"/>
+    <rect class="px" x="820" y="97" width="15" height="15" rx="2"/>
+    <rect class="px" x="888" y="97" width="15" height="15" rx="2"/>
+    <rect class="px" x="820" y="114" width="15" height="15" rx="2"/>
+    <rect class="px" x="888" y="114" width="15" height="15" rx="2"/>
+    <rect class="px" x="820" y="131" width="15" height="15" rx="2"/>
+    <rect class="px" x="888" y="131" width="15" height="15" rx="2"/>
+    <rect class="px" x="820" y="148" width="15" height="15" rx="2"/>
+    <rect class="px" x="888" y="148" width="15" height="15" rx="2"/>
+    <rect class="px" x="820" y="165" width="15" height="15" rx="2"/>
+    <rect class="px" x="888" y="165" width="15" height="15" rx="2"/>
+    <rect class="px" x="837" y="182" width="15" height="15" rx="2"/>
+    <rect class="px" x="854" y="182" width="15" height="15" rx="2"/>
+    <rect class="px" x="871" y="182" width="15" height="15" rx="2"/>
+    </g>
     </g>
   </g>
 
