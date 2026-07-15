@@ -4,11 +4,11 @@
     .val { font-family:ui-monospace,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace; font-size:15px; fill:#c9d1d9; }
     .logo{ font-family:ui-monospace,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace; font-weight:700; font-size:22px; fill:#ffffff; }
     .row { opacity:0; animation:on .35s ease forwards; }
-    .r1  { animation-delay:.15s; }
-    .r2  { animation-delay:.35s; }
-    .r3  { animation-delay:.55s; }
-    .r4  { animation-delay:.75s; }
-    .r5  { animation-delay:.95s; }
+    .r1  { animation-delay:.05s; }
+    .r2  { animation-delay:.15s; }
+    .r3  { animation-delay:.25s; }
+    .r4  { animation-delay:.35s; }
+    .r5  { animation-delay:.45s; }
     .dot   { animation:pulse 2s ease infinite; transform-origin:536px 331px; }
     .sheen { animation:sheen 6s linear infinite; }
     @keyframes on    { to { opacity:1; } }
