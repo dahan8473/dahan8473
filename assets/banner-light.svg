@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 350" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace">
+  <style>
+    .h    { fill:#1a7f37; font-size:13px; }
+    .dim  { fill:#57606a; font-size:13px; }
+    .menu { fill:#8c959f; font-size:12px; letter-spacing:2px; }
+    .sel  { fill:#116329; font-size:12px; letter-spacing:2px; }
+    .name { fill:#1a7f37; font-size:18px; }
+    .ok   { fill:#116329; font-size:14px; opacity:0; animation:on .01s steps(1) forwards; }
+    .okb  { fill:#2da44e; }
+    .d1   { animation-delay:1.4s; }
+    .d2   { animation-delay:1.7s; }
+    .d3   { animation-delay:2.0s; }
+    .d4   { animation-delay:2.3s; }
+    .cur  { fill:#116329; font-size:14px; opacity:0;
+            animation:on .01s steps(1) 2.4s forwards, blink 1.1s steps(1) 2.5s infinite; }
+    .glitch { animation:glitch 7s steps(1) 3s infinite; }
+    .sweep  { animation:sweep 9s linear infinite; }
+    @keyframes on    { to { opacity:1; } }
+    @keyframes blink { 50% { opacity:0; } }
+    @keyframes glitch {
+      0%   { transform:translate(0,0); }
+      96.5%{ transform:translate(0,0); }
+      97%  { transform:translate(3px,-1px); }
+      97.5%{ transform:translate(-3px,1px); }
+      98%  { transform:translate(0,0); }
+      100% { transform:translate(0,0); }
+    }
+    @keyframes sweep {
+      from { transform:translateY(-40px); }
+      to   { transform:translateY(360px); }
+    }
+  </style>
+  <defs>
+    <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a7f37" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#1a7f37" stop-opacity=".06"/>
+      <stop offset="1" stop-color="#1a7f37" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="reveal">
+      <rect x="100" y="80" width="780" height="140">
+        <animate attributeName="width" from="0" to="780" dur="1.1s" begin="0.2s" fill="freeze"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <text class="h" x="36" y="26" xml:space="preserve">DAVIDLIU BIOS (TM)  COPYRIGHT (C) 2026</text>
+  <text class="dim" x="924" y="26" text-anchor="end" xml:space="preserve">PORT......3000</text>
+  <line x1="36" y1="40" x2="924" y2="40" stroke="#d0d7de"/>
+  <text class="menu" x="36"  y="62">SUMMARY</text>
+  <text class="sel"  x="150" y="62">▸ BOOT SEQ</text>
+  <text class="menu" x="290" y="62">AGENTS</text>
+  <text class="menu" x="400" y="62">SHIP</text>
+  <text class="menu" x="480" y="62">MORE+</text>
+  <text class="menu" x="924" y="62" text-anchor="end" xml:space="preserve">MEM TEST: 640K OK</text>
+
+  <g class="glitch">
+    <g clip-path="url(#reveal)">
+      <text class="name" x="110" y="102" xml:space="preserve" textLength="740" lengthAdjust="spacingAndGlyphs">██████╗   █████╗  ██╗   ██╗ ██╗ ██████╗     ██╗      ██╗ ██╗   ██╗ </text>
+      <text class="name" x="110" y="124" xml:space="preserve" textLength="740" lengthAdjust="spacingAndGlyphs">██╔══██╗ ██╔══██╗ ██║   ██║ ██║ ██╔══██╗    ██║      ██║ ██║   ██║ </text>
+      <text class="name" x="110" y="146" xml:space="preserve" textLength="740" lengthAdjust="spacingAndGlyphs">██║  ██║ ███████║ ██║   ██║ ██║ ██║  ██║    ██║      ██║ ██║   ██║ </text>
+      <text class="name" x="110" y="168" xml:space="preserve" textLength="740" lengthAdjust="spacingAndGlyphs">██║  ██║ ██╔══██║ ╚██╗ ██╔╝ ██║ ██║  ██║    ██║      ██║ ██║   ██║ </text>
+      <text class="name" x="110" y="190" xml:space="preserve" textLength="740" lengthAdjust="spacingAndGlyphs">██████╔╝ ██║  ██║  ╚████╔╝  ██║ ██████╔╝    ███████╗ ██║ ╚██████╔╝ </text>
+      <text class="name" x="110" y="212" xml:space="preserve" textLength="740" lengthAdjust="spacingAndGlyphs">╚═════╝  ╚═╝  ╚═╝   ╚═══╝   ╚═╝ ╚═════╝     ╚══════╝ ╚═╝  ╚═════╝  </text>
+    </g>
+  </g>
+
+  <text class="ok d1" x="36" y="250" xml:space="preserve"><tspan class="okb">[ OK ]</tspan>  swe @ western university · 4th year</text>
+  <text class="ok d2" x="36" y="272" xml:space="preserve"><tspan class="okb">[ OK ]</tspan>  swe intern @ j.d. power</text>
+  <text class="ok d3" x="36" y="294" xml:space="preserve"><tspan class="okb">[ OK ]</tspan>  founder &amp; president @ tethos · 100+ devs · $300k+ saved for nonprofits</text>
+  <text class="ok d4" x="36" y="324" xml:space="preserve">$ open davidliu.work</text>
+  <text class="cur" x="212" y="324">▮</text>
+
+  <rect class="sweep" x="0" y="0" width="960" height="34" fill="url(#scan)"/>
+</svg>

@@ -1,32 +1,36 @@
-<img src="assets/terminal-banner.svg" width="100%" alt="david liu · swe @ western · founder @ tethos" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
+  <img src="assets/banner-dark.svg" width="100%" alt="david liu · swe @ western · founder @ tethos">
+</picture>
 
 ### `$ whoami`
 
 - swe @ western university · 4th year
-- currently: swe intern @ [j.d. power](https://www.jdpower.com)
-- founder & president @ [tethos](https://tethos.ca) · student devs building free software for nonprofits
-- prev: engineering intern @ modern engineering
+- now: swe intern @ [j.d. power](https://www.jdpower.com)
+- founder & president @ [tethos](https://tethos.ca) · 100+ student devs shipping free software for nonprofits
+- before: engineering intern @ modern engineering
 
 ### `$ ps aux | grep building`
 
-- **bumbot** · job application automation saas · scrapes postings, scores fit, writes cover letters, auto-applies · private beta
-- **[clawdash](https://github.com/dahan8473/clawdash)** · mission control for my always-on ai agent (mac mini) · live websocket feed of sessions, cron, token spend
-- **[tethos.ca](https://tethos.ca)** · solo-built org platform · 400+ users · 22 api endpoints · 3d dashboard · rag assistant
+- **bumbot** · applies to jobs while you sleep · finds postings, scores fit, writes cover letters in your voice, auto-applies · private beta
+- **[clawdash](https://github.com/dahan8473/clawdash)** · mission control for shirmp, my 24/7 ai agent on a mac mini · live websocket feed: sessions, cron, token burn
+- **[tethos.ca](https://tethos.ca)** · the org platform, solo-built · 400+ users · 22 api endpoints · 3d dashboard · rag assistant
 
 ### `$ cat tethos.id`
 
-<img src="assets/tethos-card.svg" width="100%" alt="tethos: 100+ student devs, 2 chapters, 20+ projects, $300k+ saved for nonprofits" />
+<img src="assets/tethos-card.svg" width="100%" alt="tethos: 100+ student devs, 2 chapters, 20+ projects, $300k+ saved for nonprofits">
 
-- most client work is private in [uwo-tsi](https://github.com/UWO-TSI) · multi-agent research pipeline (world vision) · grant db (plan international)
+- client work ships private in [uwo-tsi](https://github.com/UWO-TSI) · multi-agent research pipeline for world vision · grant db for plan international
 - public: [tsi-website](https://github.com/UWO-TSI/tsi-website) · [fundhomecare grant aggregator](https://github.com/UWO-TSI/FundhomecareGrantAggregator)
 
-### `$ ls ~/projects`
+### `$ tree ~/projects`
 
-- [tsi-website](https://github.com/UWO-TSI/tsi-website) · the tethos platform · next.js · supabase · fastapi · react three fiber
-- [deja-view](https://github.com/dahan8473/deja-view) · pinterest saves become 3d objects in your room · hackathon
-- [biopilot](https://github.com/dahan8473/biopilot) · ai drone crop analytics · computer vision heatmaps · hackathon
-- kunlun · bilingual cultural fashion brand site · next.js · private
-- [wec_24](https://github.com/dahan8473/WEC_24) · western engineering competition 2024 · unity · c#
+`├──` [tsi-website](https://github.com/UWO-TSI/tsi-website) · tethos.ca source · next.js · supabase · fastapi · react three fiber<br>
+`├──` [deja-view](https://github.com/dahan8473/deja-view) · pinterest board in, 3d objects in your room out · hackathon<br>
+`├──` [biopilot](https://github.com/dahan8473/biopilot) · drone imagery in, crop-health heatmaps out · computer vision · hackathon<br>
+`├──` kunlun · bilingual fashion house site · lore-anchored design · private<br>
+`└──` [wec_24](https://github.com/dahan8473/WEC_24) · western engineering competition 2024 · unity · c#
 
 ### `$ cat stack.txt`
 
