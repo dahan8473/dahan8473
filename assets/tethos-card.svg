@@ -43,7 +43,7 @@
   <text class="val" x="288" y="336">10/05/2025</text>
   <line x1="508" y1="306" x2="508" y2="340" stroke="#30363d"/>
   <text class="lab" x="528" y="318">Status</text>
-  <circle class="dot" cx="536" cy="331" r="4" fill="#3fb950"/>
+  <circle class="dot" cx="536" cy="331" r="4" fill="#58a6ff"/>
   <text class="val" x="548" y="336">active</text>
   <line x1="748" y1="306" x2="748" y2="340" stroke="#30363d"/>
   <text class="lab" x="768" y="318">Endpoint</text>

@@ -63,7 +63,7 @@ def contributions_and_streak():
 def last_push():
     events = gh(f"https://api.github.com/users/{USER}/events/public?per_page=60")
     for e in events:
-        if e["type"] == "PushEvent":
+        if e["type"] == "PushEvent" and e["repo"]["name"] != f"{USER}/{USER}":
             repo = e["repo"]["name"].split("/")[-1]
             when = datetime.strptime(e["created_at"], "%Y-%m-%dT%H:%M:%SZ").date()
             delta = (date.today() - when).days

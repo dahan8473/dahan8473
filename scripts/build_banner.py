@@ -124,15 +124,15 @@ def typing_block(x, y, fs=13):
 # ---------------------------------------------------------------- themes
 THEMES = {
     "dark": dict(
-        head="#56d364", dim="#3fa060", menu="#2e5c41", sel="#7ee787",
-        px="#3fdd78", ok="#7ee787", okb="#3fdd78", live="#f0d861",
-        portrait="#4be07f", rule="#1f3d2b", scan="#7ee787", scan_op=".07",
+        head="#79c0ff", dim="#3f7fb8", menu="#274966", sel="#a5d6ff",
+        px="#58a6ff", ok="#a5d6ff", okb="#58a6ff", live="#f0d861",
+        portrait="#6cb6ff", rule="#1b3a5c", scan="#a5d6ff", scan_op=".07",
         glow=True,
     ),
     "light": dict(
-        head="#1a7f37", dim="#57606a", menu="#8c959f", sel="#116329",
-        px="#1a7f37", ok="#116329", okb="#2da44e", live="#9a6700",
-        portrait="#116329", rule="#d0d7de", scan="#1a7f37", scan_op=".06",
+        head="#0969da", dim="#57606a", menu="#8c959f", sel="#0550ae",
+        px="#0969da", ok="#0550ae", okb="#218bff", live="#9a6700",
+        portrait="#0a3069", rule="#d0d7de", scan="#0969da", scan_op=".06",
         glow=False,
     ),
 }
@@ -282,7 +282,7 @@ def card():
   <text class="val" x="288" y="336">10/05/2025</text>
   <line x1="508" y1="306" x2="508" y2="340" stroke="#30363d"/>
   <text class="lab" x="528" y="318">Status</text>
-  <circle class="dot" cx="536" cy="331" r="4" fill="#3fb950"/>
+  <circle class="dot" cx="536" cy="331" r="4" fill="#58a6ff"/>
   <text class="val" x="548" y="336">active</text>
   <line x1="748" y1="306" x2="748" y2="340" stroke="#30363d"/>
   <text class="lab" x="768" y="318">Endpoint</text>
