@@ -39,11 +39,11 @@ MONTHS = ["", "jan", "feb", "mar", "apr", "may", "jun",
 THEMES = {
     "dark": dict(
         empty="#161b22", levels=["#161b22", "#0f4526", "#166534", "#22a04a", "#3fdd78"],
-        eaten="#05070a", snake="#58a6ff", head="#c9e4ff", text="#388bfd",
+        eaten="#05070a", snake="#58a6ff", head="#c9e4ff", text="#3fa060",
     ),
     "light": dict(
         empty="#ebedf0", levels=["#ebedf0", "#9be9a8", "#40c463", "#30a14e", "#216e39"],
-        eaten="#fbfcfd", snake="#0969da", head="#033d8b", text="#57606a",
+        eaten="#fbfcfd", snake="#0969da", head="#033d8b", text="#1a7f37",
     ),
 }
 
@@ -62,7 +62,7 @@ def fetch_weeks():
       user(login: $login) {
         contributionsCollection(from: $from) {
           contributionCalendar {
-            weeks { contributionDays { date contributionLevel } }
+            weeks { contributionDays { date contributionCount contributionLevel } }
           }
         }
       }
@@ -105,8 +105,12 @@ def solve(grid):
 
     remaining = {(c, r) for c in range(ncols) for r in range(len(grid[c])) if grid[c][r] > 0}
     planned = len(remaining)
-    max_len = BASE_LEN + max(6, min(15, planned // 6))
-    per_seg = max(2, planned // (max_len - BASE_LEN))
+    FAST_TO, CAP, SLOW_EVERY = 10, 16, 6
+
+    def target_len(k):  # length after k eats
+        if k <= FAST_TO - BASE_LEN:
+            return BASE_LEN + k
+        return min(CAP, FAST_TO + (k - (FAST_TO - BASE_LEN)) // SLOW_EVERY)
 
     pos = min(remaining, key=lambda cr: cr[0] * 10 + abs(cr[1] - 3)) if remaining else (0, 3)
     route, eats = [pos], []
@@ -118,7 +122,7 @@ def solve(grid):
         cur_len = BASE_LEN + len(growth_steps)
         target = min(
             remaining,
-            key=lambda cr: (grid[cr[0]][cr[1]], abs(cr[0] - pos[0]) + abs(cr[1] - pos[1])),
+            key=lambda cr: grid[cr[0]][cr[1]] * 8 + abs(cr[0] - pos[0]) + abs(cr[1] - pos[1]),
         )
         body = set(route[-cur_len:])
         hop = bfs(pos, target, body) or bfs(pos, target, set())
@@ -127,14 +131,13 @@ def solve(grid):
             if step in remaining:
                 remaining.discard(step)
                 eats.append((len(route) - 1, step))
-                while len(eats) >= (len(growth_steps) + 1) * per_seg and \
-                        BASE_LEN + len(growth_steps) < max_len:
+                while BASE_LEN + len(growth_steps) < target_len(len(eats)):
                     growth_steps.append(len(route) - 1)
         pos = route[-1]
-    return route, eats, growth_steps, max_len, per_seg
+    return route, eats, growth_steps, CAP, SLOW_EVERY
 
 
-def build(theme_name, grid, months, route, eats, growth_steps, max_len):
+def build(theme_name, grid, counts, months, route, eats, growth_steps, max_len):
     t = THEMES[theme_name]
     ncols = len(grid)
     n = len(route)
@@ -220,12 +223,37 @@ def build(theme_name, grid, months, route, eats, growth_steps, max_len):
         )
     body_svg.append(f'<text class="lab" x="{lx + 5 * (CELL + 3) + 8}" y="{ly + 9}">more</text>')
 
+    # commit counter, bottom left: one text state per eat
+    total_commits = sum(counts[c][r] for step, (c, r) in eats)
+    states, val = [(0, 0)], 0
+    for step, (c, r) in eats:
+        val += counts[c][r]
+        states.append((step, val))
+    body_svg.append(f'<text class="lab" x="{MX}" y="{ly + 9}">$ commits eaten:</text>')
+    for idx, (step, v) in enumerate(states):
+        a = pct(step)
+        b = pct(states[idx + 1][0]) if idx + 1 < len(states) else 100.0
+        if b <= a:
+            continue
+        if b < 100:
+            frames = f"0% {{ opacity:0; }} {a}% {{ opacity:1; }} {b}% {{ opacity:0; }} 100% {{ opacity:0; }}"
+        else:
+            frames = f"0% {{ opacity:0; }} {a}% {{ opacity:1; }} 100% {{ opacity:1; }}"
+        css.append(
+            f"@keyframes n{idx} {{ {frames} }}\n"
+            f".n{idx} {{ animation: n{idx} {dur:.1f}s steps(1,end) infinite; }}"
+        )
+        body_svg.append(
+            f'<text class="cnt n{idx}" opacity="0" x="{MX + 102}" y="{ly + 9}">{v}/{total_commits}</text>'
+        )
+
     w = MX * 2 + ncols * PITCH - GAP
     h = MTOP + 7 * PITCH - GAP + MBOT
     style = "\n".join(css)
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}">
   <style>
     .lab {{ font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace; font-size:9.5px; fill:{t['text']}; }}
+    .cnt {{ font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace; font-size:9.5px; fill:{t['snake']}; }}
     @media (prefers-reduced-motion) {{ * {{ animation: none !important; }} }}
     {style}
   </style>
@@ -236,6 +264,7 @@ def build(theme_name, grid, months, route, eats, growth_steps, max_len):
 
 weeks = fetch_weeks()
 grid = [[LEVEL[d["contributionLevel"]] for d in w["contributionDays"]] for w in weeks]
+counts = [[d["contributionCount"] for d in w["contributionDays"]] for w in weeks]
 months, seen_month = [], None
 for c, w in enumerate(weeks):
     m = int(w["contributionDays"][0]["date"].split("-")[1])
@@ -248,7 +277,7 @@ if months and months[0][0] == 0 and len(months) > 1 and months[1][0] <= 2:
 route, eats, growth_steps, max_len, per_seg = solve(grid)
 os.makedirs(DIST, exist_ok=True)
 for name in ("dark", "light"):
-    svg = build(name, grid, months, route, eats, growth_steps, max_len)
+    svg = build(name, grid, counts, months, route, eats, growth_steps, max_len)
     with open(os.path.join(DIST, f"snake-{name}.svg"), "w") as f:
         f.write(svg)
 print(f"built: {len(eats)} cells, route {len(route)} steps, "

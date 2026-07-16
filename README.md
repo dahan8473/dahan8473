@@ -51,7 +51,7 @@
 └────────────┴────────────────────────────────────────────────┘
 ```
 
-### `$ top`
+### `$ davids commits this year`
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dahan8473/dahan8473/output/snake-dark.svg">
