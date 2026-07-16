@@ -54,9 +54,9 @@
 ### `$ davids commits this year`
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dahan8473/dahan8473/output/snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dahan8473/dahan8473/output/snake-light.svg">
-  <img src="https://raw.githubusercontent.com/dahan8473/dahan8473/output/snake-dark.svg" width="100%" alt="snake eating the contribution graph">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dahan8473/dahan8473/output/snake-dark.svg?v=5">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dahan8473/dahan8473/output/snake-light.svg?v=5">
+  <img src="https://raw.githubusercontent.com/dahan8473/dahan8473/output/snake-dark.svg?v=5" width="100%" alt="snake eating the contribution graph">
 </picture>
 
 ### `$ wall`

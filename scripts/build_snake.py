@@ -39,11 +39,11 @@ MONTHS = ["", "jan", "feb", "mar", "apr", "may", "jun",
 THEMES = {
     "dark": dict(
         empty="#161b22", levels=["#161b22", "#0f4526", "#166534", "#22a04a", "#3fdd78"],
-        eaten="#05070a", snake="#58a6ff", head="#c9e4ff", text="#3fa060",
+        eaten="#161b22", snake="#58a6ff", head="#c9e4ff", text="#3fa060",
     ),
     "light": dict(
         empty="#ebedf0", levels=["#ebedf0", "#9be9a8", "#40c463", "#30a14e", "#216e39"],
-        eaten="#fbfcfd", snake="#0969da", head="#033d8b", text="#1a7f37",
+        eaten="#ebedf0", snake="#0969da", head="#033d8b", text="#1a7f37",
     ),
 }
 
@@ -105,12 +105,9 @@ def solve(grid):
 
     remaining = {(c, r) for c in range(ncols) for r in range(len(grid[c])) if grid[c][r] > 0}
     planned = len(remaining)
-    FAST_TO, CAP, SLOW_EVERY = 10, 16, 6
 
-    def target_len(k):  # length after k eats
-        if k <= FAST_TO - BASE_LEN:
-            return BASE_LEN + k
-        return min(CAP, FAST_TO + (k - (FAST_TO - BASE_LEN)) // SLOW_EVERY)
+    def target_len(k):  # classic rules: +1 per eaten square, no cap
+        return BASE_LEN + k
 
     pos = min(remaining, key=lambda cr: cr[0] * 10 + abs(cr[1] - 3)) if remaining else (0, 3)
     route, eats = [pos], []
@@ -134,7 +131,7 @@ def solve(grid):
                 while BASE_LEN + len(growth_steps) < target_len(len(eats)):
                     growth_steps.append(len(route) - 1)
         pos = route[-1]
-    return route, eats, growth_steps, CAP, SLOW_EVERY
+    return route, eats, growth_steps, BASE_LEN + planned, 1
 
 
 def build(theme_name, grid, counts, months, route, eats, growth_steps, max_len):
