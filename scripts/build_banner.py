@@ -42,23 +42,57 @@ def esc(s):
 
 
 # ---------------------------------------------------------------- portrait
-def ascii_portrait(cols=52):
-    from PIL import Image, ImageOps
+def ascii_portrait(cols=58, bg_cut=147, floor=104, gamma=0.9):
+    """Negative-space portrait: face rendered in bright chars, hair + bright
+    passport background dropped to black. avatar.png is a face crop; the bright
+    background is flood-filled away from the border (hair walls it off from the
+    face), then only the face highlights survive as dense characters."""
+    from collections import deque
 
-    from PIL import ImageEnhance
+    import numpy as np
+    from PIL import Image, ImageEnhance, ImageFilter
+
     img = Image.open(os.path.join(HERE, "avatar.png")).convert("L")
-    img = ImageOps.autocontrast(img, cutoff=1)
-    img = ImageEnhance.Contrast(img).enhance(1.7)
-    w, h = img.size
-    # mono cell is ~0.6em wide, ~1.05em tall -> squash rows
+    img = img.filter(ImageFilter.MedianFilter(3))
+    img = ImageEnhance.Contrast(img).enhance(1.25)
+    img = img.filter(ImageFilter.UnsharpMask(radius=6, percent=180, threshold=2))
+    a = np.asarray(img).astype(np.float32)
+
+    # flood-fill the bright background from the border; hair (dark) stops it
+    H, W = a.shape
+    bright = a > bg_cut
+    seen = np.zeros_like(bright)
+    q = deque()
+    for x in range(W):
+        for y in (0, H - 1):
+            if bright[y, x]:
+                q.append((y, x)); seen[y, x] = True
+    for y in range(H):
+        for x in (0, W - 1):
+            if bright[y, x] and not seen[y, x]:
+                q.append((y, x)); seen[y, x] = True
+    while q:
+        y, x = q.popleft()
+        for dy, dx in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+            ny, nx = y + dy, x + dx
+            if 0 <= ny < H and 0 <= nx < W and bright[ny, nx] and not seen[ny, nx]:
+                seen[ny, nx] = True; q.append((ny, nx))
+    a[seen] = 0
+
+    # crush hair/shadow below floor, stretch the face band, gamma-brighten
+    a = np.clip((a - floor) / (bg_cut - floor), 0, 1) ** gamma
+    im = Image.fromarray((a * 255).astype(np.uint8))
+
+    w, h = im.size
     rows = max(1, round(cols * (h / w) * 0.52))
-    img = img.resize((cols, rows))
-    px = img.load()
-    ramp = "@@%%##**++==--::.. "  # dark pixels -> dense chars, finer ramp
+    im = im.resize((cols, rows))
+    px = np.asarray(im)
+    ramp = " .:-=+*#%@@"  # bright pixel -> dense char (face lit, black elsewhere)
     lines = []
     for r in range(rows):
-        line = "".join(ramp[min(px[c, r] * len(ramp) // 256, len(ramp) - 1)] for c in range(cols))
-        lines.append(line)
+        lines.append("".join(
+            ramp[min(int(px[r, c]) * (len(ramp) - 1) // 255, len(ramp) - 1)] for c in range(cols)
+        ))
     return lines
 
 
