@@ -7,7 +7,7 @@
     .menu { fill:#8c959f; font-size:12px; letter-spacing:2px; }
     .sel  { fill:#0550ae; font-size:12px; letter-spacing:2px; }
     .px   { fill:#0969da; }
-    .port { fill:#0a3069; font-size:7.4px; opacity:.9; }
+    .port { fill:#0a3069; font-size:6.4px; opacity:.95; }
     .ok   { fill:#0550ae; font-size:13.5px; opacity:0; animation:on .01s steps(1) forwards; }
     .okb  { fill:#218bff; }
     .liv  { fill:#9a6700; }
@@ -54,43 +54,42 @@
   <text class="menu" x="480" y="62">MORE+</text>
   <text class="menu" x="924" y="62" text-anchor="end" xml:space="preserve">MEM TEST: 640K OK</text>
 
-  <text class="port" x="36" y="92.0" xml:space="preserve">                                                    </text>
-  <text class="port" x="36" y="99.5" xml:space="preserve">                                                    </text>
-  <text class="port" x="36" y="107.0" xml:space="preserve">                                                    </text>
-  <text class="port" x="36" y="114.5" xml:space="preserve">... .           .::-=-:..:-===:.                    </text>
-  <text class="port" x="36" y="122.0" xml:space="preserve">...... ..  ...-+*%@@@@@#%@@@@@@%+-.                 </text>
-  <text class="port" x="36" y="129.5" xml:space="preserve">.......   ..:*@@@@@@@@@@@@@@@@@@@@#-.               </text>
-  <text class="port" x="36" y="137.0" xml:space="preserve">...........+@@@@@@@@@@@@@@@@@@@@@@@@*:              </text>
-  <text class="port" x="36" y="144.5" xml:space="preserve">.........-#@@@@@@@@@@@@@@@@@@@@@@@@@@@=.            </text>
-  <text class="port" x="36" y="152.0" xml:space="preserve">........=@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*.           </text>
-  <text class="port" x="36" y="159.5" xml:space="preserve">.......-@@@@@@@@@@@@@@@@%@@@@@@@@@@@@@@@#:.         </text>
-  <text class="port" x="36" y="167.0" xml:space="preserve">.::...:#@@@@@@@@@@@@@@@@%*%%@@@@@@@@@@@@@#.         </text>
-  <text class="port" x="36" y="174.5" xml:space="preserve">:::.::*@@@@@@@%@@#@@*%%@%++*%@@@@@@@@@@@@@=.        </text>
-  <text class="port" x="36" y="182.0" xml:space="preserve">:::::+@@@@@@@@@@*##%##+#%#++#@@@@@@@@@@@@@%:.       </text>
-  <text class="port" x="36" y="189.5" xml:space="preserve">:::::#@@@@@@@@@%##%%@#=*#**+*%@@@@@@@@@@@@@-.       </text>
-  <text class="port" x="36" y="197.0" xml:space="preserve">::::-%@@@@@@@@@###%%%=-====#@%%@@@@@@@@@@@@=..      </text>
-  <text class="port" x="36" y="204.5" xml:space="preserve">::::-#@@@@@@@@*++=+++=--===+++#%%@@@@@@@@@@*:.      </text>
-  <text class="port" x="36" y="212.0" xml:space="preserve">::::-#@@@@@@@@##*%#++=--===+#%%%@@@@@@@@@@@+:.      </text>
-  <text class="port" x="36" y="219.5" xml:space="preserve">:::--#@@@@@%###*+*+====-==-==++*#**#@@@@@@@+:.      </text>
-  <text class="port" x="36" y="227.0" xml:space="preserve">--:--*@@@@@*+=======-======-----==+*%@@@@@%=:..     </text>
-  <text class="port" x="36" y="234.5" xml:space="preserve">-----+%@@@%*+=------=====++=-----==*%%@@@@%=:..     </text>
-  <text class="port" x="36" y="242.0" xml:space="preserve">-----=*@@@%*+=------===--=*+-----==*%%@@@@*-:...    </text>
-  <text class="port" x="36" y="249.5" xml:space="preserve">-----=+#@@%*+==-----=++==+++=----=+*%%#@@%+-....    </text>
-  <text class="port" x="36" y="257.0" xml:space="preserve">------=+##%#++=----=++++****=----=+*%*%@@*-:....    </text>
-  <text class="port" x="36" y="264.5" xml:space="preserve">------==*#@%*+===--=======+======+*#@@@@@*-:....    </text>
-  <text class="port" x="36" y="272.0" xml:space="preserve">=------==*@@#*++===+###*####*===+**%@@@@%=:......   </text>
-  <text class="port" x="36" y="279.5" xml:space="preserve">====----=+#@@#*++==+*****##*++++*#%@@@@@#=:........ </text>
-  <text class="port" x="36" y="287.0" xml:space="preserve">==========+#@@%#*++==++++++++++*%@@@@@#+=-:.......  </text>
-  <text class="port" x="36" y="294.5" xml:space="preserve">===========+#@@%#*+++======++*#@@@@@@*+=-::........ </text>
-  <text class="port" x="36" y="302.0" xml:space="preserve">============+#%##%#*+++++++*#%@@%#%%*=-:::::..::... </text>
-  <text class="port" x="36" y="309.5" xml:space="preserve">=============+*#**#%%%####%%%%#***%#=-:::::::..:.::.</text>
-  <text class="port" x="36" y="317.0" xml:space="preserve">=============++#*****##***********%#=-:::::::.......</text>
-  <text class="port" x="36" y="324.5" xml:space="preserve">+============+*##**++++++++***+++*#%#**+=::::..::...</text>
-  <text class="port" x="36" y="332.0" xml:space="preserve">++++=+===++*##%##**+++++++++**+++*#%%%@@@#*++-:::::.</text>
-  <text class="port" x="36" y="339.5" xml:space="preserve">+++++++**%@@%%%###**+++++++**+++***##%@@@@@@@@%#*=-:</text>
-  <text class="port" x="36" y="347.0" xml:space="preserve">+++*#%@@@@@@######****+++++*+++****#%@@@@@@@@@@@@@@#</text>
-  <text class="port" x="36" y="354.5" xml:space="preserve">*#%@@@@@@@@@@%####***********+***#%@@@@@@@@@@@@@@@@@</text>
-  <text class="dim" x="36" y="376" xml:space="preserve">[ SELF TEST: PASS ]</text>
+  <text class="port" x="36" y="94.0" xml:space="preserve">                                  .                 </text>
+  <text class="port" x="36" y="100.4" xml:space="preserve">                  ...      ....                     </text>
+  <text class="port" x="36" y="106.8" xml:space="preserve">             .:-+#%%#*=:-+#%@@%%#+:                 </text>
+  <text class="port" x="36" y="113.2" xml:space="preserve">          .=#%@@@@@@@@@@@@@@@@@@@@@%+:              </text>
+  <text class="port" x="36" y="119.6" xml:space="preserve">        .+%@@@@@@@@@@@@@@@@@@@@@@@@@@@#:            </text>
+  <text class="port" x="36" y="126.0" xml:space="preserve">       =%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*:          </text>
+  <text class="port" x="36" y="132.4" xml:space="preserve">     -#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@+         </text>
+  <text class="port" x="36" y="138.8" xml:space="preserve">    +@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#:       </text>
+  <text class="port" x="36" y="145.2" xml:space="preserve">   *@@@@@@@@@@@@@@@@@@@@%@@@@@@@@@@@@@@@@@@@@=      </text>
+  <text class="port" x="36" y="151.6" xml:space="preserve">  -@@@@@@@@@@@@@@@@@@@@@#+%%@@@@@@%@@@@@@@@@@@=     </text>
+  <text class="port" x="36" y="158.0" xml:space="preserve"> :%@@@@@@@@@@@@%@@@*@@@@%--**@@@@@@@@@@@@@@@@@@-    </text>
+  <text class="port" x="36" y="164.4" xml:space="preserve">:%@@@@@@@@@#%@#*#@*=#**%%-:--*%@@@@@@@@@@@@@@@@%:   </text>
+  <text class="port" x="36" y="170.8" xml:space="preserve">%@@@@@@@@@@@@#-*+%*=#-:*%*=::=#@@@@@@@@@@@@@@@@@+   </text>
+  <text class="port" x="36" y="177.2" xml:space="preserve">@@@@@@@@@@@@@++++%#%#..*#=*=:-*#%@@@@@@@@@@@@@@@#   </text>
+  <text class="port" x="36" y="183.6" xml:space="preserve">@@@@@@@@@@@@@###%%#%-  -..::+#@@@@@@@@@@@@@@@@@@%.  </text>
+  <text class="port" x="36" y="190.0" xml:space="preserve">@@@@@@@@@@@*=:::=++=.   ....-+*-+@#%@@@@@@@@@@@@@-  </text>
+  <text class="port" x="36" y="196.4" xml:space="preserve">@@@@@@@@@@#=-::::-:.        .::-%#*#@@@@@@@@@@@@@*  </text>
+  <text class="port" x="36" y="202.8" xml:space="preserve">@@@@@@@@@@@##==@%=-:.      .:-%%*#@@@@@@@@@@@@@@%:  </text>
+  <text class="port" x="36" y="209.2" xml:space="preserve">@@@@@@@%*=*+=::-:...     .  ..:::-====+#@@@@@@@@@-  </text>
+  <text class="port" x="36" y="215.6" xml:space="preserve">%@@@@@%+=:..             ..         ..-+%@@@@@@@#:  </text>
+  <text class="port" x="36" y="222.0" xml:space="preserve">*@@@@@#=-.               .:..        .:=%%@@@@@@*.  </text>
+  <text class="port" x="36" y="228.4" xml:space="preserve">:#@@@##=:.          .    .:-.        .:=%+#@@@@@+   </text>
+  <text class="port" x="36" y="234.8" xml:space="preserve">.=@@@%#+-.         ..     :-:        .-+#*%%@@@*:   </text>
+  <text class="port" x="36" y="241.2" xml:space="preserve">.-+@%##+-:.       ..:-:.:-=:-:       :=+##=#@@%=    </text>
+  <text class="port" x="36" y="247.6" xml:space="preserve"> .-+#+**--..       :-------==:      .:=+#==@@@+.    </text>
+  <text class="port" x="36" y="254.0" xml:space="preserve">  .-+%@%=-:.         . .. .....    .:-+*@@@@@@#.    </text>
+  <text class="port" x="36" y="260.4" xml:space="preserve">   :-+%@+--::.   .:-==---===--.....:-=*%@@@@@#=.    </text>
+  <text class="port" x="36" y="266.8" xml:space="preserve">   ..=@@@+=--:...:=*##***####+-:..:-=*#@@@@@@#:     </text>
+  <text class="port" x="36" y="273.2" xml:space="preserve">    .:=#@@#+=-::...:----====-::::-=+#%@@@@@%*=:     </text>
+  <text class="port" x="36" y="279.6" xml:space="preserve">     .:=#@@%*+=-::...::::::::::--+*%@@@@@%*=:       </text>
+  <text class="port" x="36" y="286.0" xml:space="preserve">      .:=#@@%#*+--:.. . ....::-=*%@@@@@@%+:.        </text>
+  <text class="port" x="36" y="292.4" xml:space="preserve">       .:=#@#*#%*+-::......:-=+%@@%###@%=:          </text>
+  <text class="port" x="36" y="298.8" xml:space="preserve">        .:=+*+++*#%*+++++=++*%@%#*==+##+:           </text>
+  <text class="port" x="36" y="305.2" xml:space="preserve">.      ...:-++==-=+*###***#**++===-==*%-            </text>
+  <text class="port" x="36" y="311.6" xml:space="preserve">... ......:-+*+=----=----------=----=*%+.           </text>
+  <text class="dim" x="36" y="330" xml:space="preserve">[ SELF TEST: PASS ]</text>
 
   <g class="glitch">
     
