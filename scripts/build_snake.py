@@ -39,7 +39,7 @@ MONTHS = ["", "jan", "feb", "mar", "apr", "may", "jun",
 THEMES = {
     "dark": dict(
         empty="#161b22", levels=["#161b22", "#0f4526", "#166534", "#22a04a", "#3fdd78"],
-        eaten="#05070a", snake="#58a6ff", head="#c9e4ff", text="#3fa060",
+        eaten="#05070a", snake="#58a6ff", head="#c9e4ff", text="#388bfd",
     ),
     "light": dict(
         empty="#ebedf0", levels=["#ebedf0", "#9be9a8", "#40c463", "#30a14e", "#216e39"],
