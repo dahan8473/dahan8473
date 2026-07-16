@@ -40,10 +40,12 @@ THEMES = {
     "dark": dict(
         empty="#161b22", levels=["#161b22", "#0f4526", "#166534", "#22a04a", "#3fdd78"],
         eaten="#161b22", snake="#58a6ff", head="#c9e4ff", text="#3fa060",
+        ramp=[(1, "#79c0ff"), (4, "#58a6ff"), (10, "#3f83d6"), (21, "#2e62a8")],
     ),
     "light": dict(
         empty="#ebedf0", levels=["#ebedf0", "#9be9a8", "#40c463", "#30a14e", "#216e39"],
         eaten="#ebedf0", snake="#0969da", head="#033d8b", text="#1a7f37",
+        ramp=[(1, "#0757b8"), (4, "#0969da"), (10, "#3d8ae0"), (21, "#74aeea")],
     ),
 }
 
@@ -247,7 +249,10 @@ def build(theme_name, grid, counts, months, route, eats, growth_steps, max_len):
                 pa = pct(a)
                 stops.append((max(pa - 0.05, 0.0), None))  # hold previous color until here
                 stops.append((pa, t["head"]))
-                stops.append((min(pa + 0.18, 99.9), t["snake"]))
+                # age-based shading: dim smoothly toward the tail
+                for age, col in t["ramp"]:
+                    if a + age < b:
+                        stops.append((pct(a + age), col))
                 if b < total:
                     pb = pct(b)
                     stops.append((max(pb - 0.05, 0.0), None))
