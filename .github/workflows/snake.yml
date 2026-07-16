@@ -11,12 +11,14 @@ jobs:
   snake:
     runs-on: ubuntu-latest
     steps:
-      - uses: Platane/snk/svg-only@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
-          github_user_name: dahan8473
-          outputs: |
-            dist/snake-dark.svg?palette=github-dark&color_snake=#3fdd78
-            dist/snake-light.svg?palette=github-light&color_snake=#1a7f37
+          python-version: "3.12"
+      - name: build growth snake
+        env:
+          GH_TOKEN: ${{ secrets.PROFILE_PAT || github.token }}
+        run: python scripts/build_snake.py
       - uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output

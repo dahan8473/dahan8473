@@ -1,8 +1,8 @@
 {
-  "pid": 53887,
-  "port": 23620,
-  "token": "8e718318-084d-4fa1-b526-eeb560c9b338",
-  "startedAt": "2026-07-16T06:56:41.122Z",
+  "pid": 8828,
+  "port": 57070,
+  "token": "a3a52057-c5f5-4d7c-9f90-eb736bd92c9c",
+  "startedAt": "2026-07-16T18:03:54.678Z",
   "serverPath": "/Users/DavidLiu/.claude/skills/gstack/browse/src/server.ts",
   "mode": "launched",
   "configHash": "303a7eeccc03078b"
