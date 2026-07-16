@@ -75,13 +75,55 @@ def build(theme_name, grid):
     t = THEMES[theme_name]
     ncols = len(grid)
 
-    # serpentine route over every cell
-    route = []
-    for c in range(ncols):
-        rows = range(7) if c % 2 == 0 else range(6, -1, -1)
-        for r in rows:
-            if r < len(grid[c]):
-                route.append((c, r))
+    # pathfound route: BFS to nearest uneaten cell, avoiding the snake body
+    from collections import deque
+
+    def neighbors(cr):
+        c, r = cr
+        for dc, dr in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+            nc, nr = c + dc, r + dr
+            if 0 <= nc < ncols and 0 <= nr < len(grid[nc]):
+                yield (nc, nr)
+
+    def bfs(start, goal, blocked):
+        if start == goal:
+            return [start]
+        q, seen = deque([(start, [start])]), {start}
+        while q:
+            cur, path_ = q.popleft()
+            for nb in neighbors(cur):
+                if nb in seen or (nb in blocked and nb != goal):
+                    continue
+                if nb == goal:
+                    return path_ + [nb]
+                seen.add(nb)
+                q.append((nb, path_ + [nb]))
+        return None
+
+    remaining = {(c, r) for c in range(ncols) for r in range(len(grid[c])) if grid[c][r] > 0}
+    total_eats = len(remaining)
+
+    # density-driven growth: bigger year -> longer snake, faster fattening
+    max_len = BASE_LEN + max(5, min(13, total_eats // 8))
+    slots = max_len - BASE_LEN
+    per_seg = max(1, total_eats // slots) if slots else total_eats
+
+    pos = min(remaining, key=lambda cr: cr[0] * 10 + abs(cr[1] - 3)) if remaining else (0, 3)
+    route, eats = [pos], []
+    if pos in remaining:
+        remaining.discard(pos)
+        eats.append((0, pos))
+    while remaining:
+        cur_len = BASE_LEN + len(eats) // per_seg
+        target = min(remaining, key=lambda cr: abs(cr[0] - pos[0]) + abs(cr[1] - pos[1]))
+        body = set(route[-cur_len:])
+        hop = bfs(pos, target, body) or bfs(pos, target, set())
+        for step in hop[1:]:
+            route.append(step)
+            if step in remaining:
+                remaining.discard(step)
+                eats.append((len(route) - 1, step))
+        pos = route[-1]
     n = len(route)
     total = n + PAUSE_STEPS
     dur = total / STEPS_PER_SEC
@@ -92,15 +134,6 @@ def build(theme_name, grid):
     def xy(cr):
         c, r = cr
         return M + c * PITCH, M + r * PITCH
-
-    # eat events: step -> cell, in route order
-    eats = [(i, cr) for i, cr in enumerate(route) if grid[cr[0]][cr[1]] > 0]
-    total_eats = len(eats)
-
-    # density-driven growth: bigger year -> longer snake, faster fattening
-    max_len = BASE_LEN + max(4, min(13, total_eats // 10))
-    slots = max_len - BASE_LEN
-    per_seg = max(1, total_eats // slots) if slots else total_eats
 
     css, body = [], []
 
