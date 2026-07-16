@@ -66,7 +66,7 @@ sign it: [**leave a message**](https://github.com/dahan8473/dahan8473/issues/new
 <!--WALL:START-->
 ```text
 $ cat /var/log/wall
-  the wall is empty. be the first.
+  @dahan8473: first  (Jul 16)
 ```
 <!--WALL:END-->
 
