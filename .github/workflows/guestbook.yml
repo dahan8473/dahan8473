@@ -1,0 +1,41 @@
+name: guestbook
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: readme-writes
+
+jobs:
+  sign:
+    if: startsWith(github.event.issue.title, 'wall|')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: append entry
+        env:
+          WALL_USER: ${{ github.event.issue.user.login }}
+          WALL_TITLE: ${{ github.event.issue.title }}
+        run: python scripts/guestbook.py
+      - name: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --cached --quiet && exit 0
+          git commit -m "wall: new entry [skip ci]"
+          git pull --rebase origin main
+          git push
+      - name: close issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue close ${{ github.event.issue.number }} \
+            --repo ${{ github.repository }} \
+            --comment "signed. the wall updates in about 30 seconds. thanks @${{ github.event.issue.user.login }}"
