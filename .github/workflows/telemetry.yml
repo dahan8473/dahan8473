@@ -23,8 +23,10 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.PROFILE_PAT || github.token }}
         run: python scripts/fetch_stats.py
-      - name: rebuild banner
-        run: python scripts/build_banner.py
+      - name: rebuild banner and headers
+        run: |
+          python scripts/build_banner.py
+          python scripts/build_headers.py
       - name: commit if changed
         run: |
           git config user.name "github-actions[bot]"
