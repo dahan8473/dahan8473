@@ -77,8 +77,11 @@ def fetch_weeks():
     return data["data"]["user"]["contributionsCollection"]["contributionCalendar"]["weeks"]
 
 
-def solve(grid):
-    """Route sparse-to-dense with BFS body avoidance. Returns route, eats, growth."""
+def solve(grid, cap=999):
+    """Strict snake rules: the head never enters an occupied cell. BFS to the
+    best target avoiding the body; if every target is walled off, chase the
+    tail one step at a time until space opens. Growth: +1 per eaten square,
+    up to cap (the caller finds the longest cap that still clears the board)."""
     ncols = len(grid)
 
     def neighbors(cr):
@@ -88,10 +91,10 @@ def solve(grid):
             if 0 <= nc < ncols and 0 <= nr < len(grid[nc]):
                 yield (nc, nr)
 
-    def bfs(start, goal, blocked):
-        if start == goal:
-            return [start]
-        q, seen = deque([(start, [start])]), {start}
+    def bfs(start_, goal, blocked):
+        if start_ == goal:
+            return [start_]
+        q, seen = deque([(start_, [start_])]), {start_}
         while q:
             cur, path = q.popleft()
             for nb in neighbors(cur):
@@ -106,32 +109,89 @@ def solve(grid):
     remaining = {(c, r) for c in range(ncols) for r in range(len(grid[c])) if grid[c][r] > 0}
     planned = len(remaining)
 
-    def target_len(k):  # classic rules: +1 per eaten square, no cap
-        return BASE_LEN + k
+    start = min(remaining, key=lambda cr: cr[0] * 10 + abs(cr[1] - 3)) if remaining else (0, 3)
+    body = deque([start])
+    occupied = {start}
+    route, eats, growth_steps = [start], [], []
 
-    pos = min(remaining, key=lambda cr: cr[0] * 10 + abs(cr[1] - 3)) if remaining else (0, 3)
-    route, eats = [pos], []
-    growth_steps = []
-    if pos in remaining:
-        remaining.discard(pos)
-        eats.append((0, pos))
-    while remaining:
-        cur_len = BASE_LEN + len(growth_steps)
-        target = min(
+    def allowed_len():
+        return BASE_LEN + len(growth_steps)
+
+    def eat(cell):
+        remaining.discard(cell)
+        eats.append((len(route) - 1, cell))
+        if BASE_LEN + len(growth_steps) < cap:
+            growth_steps.append(len(route) - 1)
+
+    def step_to(cell):
+        assert cell not in occupied, f"self-collision at {cell}"
+        route.append(cell)
+        body.append(cell)
+        occupied.add(cell)
+        if cell in remaining:
+            eat(cell)
+        while len(body) > allowed_len():
+            occupied.discard(body.popleft())
+
+    if start in remaining:
+        eat(start)
+
+    def safe_step(cell):
+        """Would moving here keep the tail reachable? (anti-trap heuristic)"""
+        if len(body) < 8:
+            return True
+        grows = cell in remaining
+        new_occ = set(occupied)
+        new_occ.add(cell)
+        new_body0 = body[0]
+        if not grows and len(body) + 1 > allowed_len():
+            new_occ.discard(body[0])
+            new_body0 = body[1] if len(body) > 1 else cell
+        return bfs(cell, new_body0, new_occ - {new_body0, cell}) is not None
+
+    stuck = 0
+    while remaining and len(route) < 4000:
+        head = body[-1]
+        blocked = occupied - {head}
+        path = None
+        for cand in sorted(
             remaining,
-            key=lambda cr: grid[cr[0]][cr[1]] * 8 + abs(cr[0] - pos[0]) + abs(cr[1] - pos[1]),
-        )
-        body = set(route[-cur_len:])
-        hop = bfs(pos, target, body) or bfs(pos, target, set())
-        for step in hop[1:]:
-            route.append(step)
-            if step in remaining:
-                remaining.discard(step)
-                eats.append((len(route) - 1, step))
-                while BASE_LEN + len(growth_steps) < target_len(len(eats)):
-                    growth_steps.append(len(route) - 1)
-        pos = route[-1]
-    return route, eats, growth_steps, BASE_LEN + planned, 1
+            key=lambda cr: grid[cr[0]][cr[1]] * 8 + abs(cr[0] - head[0]) + abs(cr[1] - head[1]),
+        )[:24]:
+            p_ = bfs(head, cand, blocked)
+            if p_ and len(p_) > 1:
+                path = p_
+                break
+        if path:
+            aborted = False
+            for cell in path[1:]:
+                if not safe_step(cell):
+                    aborted = True
+                    break
+                step_to(cell)
+            if not aborted:
+                stuck = 0
+                continue
+        # walled off: chase the tail one step, tail retreat opens space
+        stuck += 1
+        if stuck > 400:
+            break
+        tail = body[0]
+        tpath = bfs(head, tail, blocked - {tail})
+        nxt = None
+        if tpath and len(tpath) > 1 and tpath[1] not in occupied and safe_step(tpath[1]):
+            nxt = tpath[1]
+        else:
+            free = [nb for nb in neighbors(head) if nb not in occupied]
+            safe = [nb for nb in free if safe_step(nb)]
+            pool = safe or free
+            if pool:  # prefer the most open cell
+                nxt = max(pool, key=lambda cr: sum(1 for n2 in neighbors(cr) if n2 not in occupied))
+        if nxt is None:
+            break  # fully trapped; end the run gracefully
+        step_to(nxt)
+
+    return route, eats, growth_steps, BASE_LEN + len(growth_steps), len(remaining)
 
 
 def build(theme_name, grid, counts, months, route, eats, growth_steps, max_len):
@@ -271,11 +331,15 @@ for c, w in enumerate(weeks):
 if months and months[0][0] == 0 and len(months) > 1 and months[1][0] <= 2:
     months = months[1:]  # avoid label collision at the left edge
 
-route, eats, growth_steps, max_len, per_seg = solve(grid)
+total_food = sum(1 for c in range(len(grid)) for r in range(len(grid[c])) if grid[c][r] > 0)
+for cap in (48, 40, 34, 28, 24, 20, 16):
+    route, eats, growth_steps, max_len, left = solve(grid, cap)
+    if left == 0:
+        break
+print(f"cap search: settled at {cap} (final length {max_len}, {left} uneaten)")
 os.makedirs(DIST, exist_ok=True)
 for name in ("dark", "light"):
     svg = build(name, grid, counts, months, route, eats, growth_steps, max_len)
     with open(os.path.join(DIST, f"snake-{name}.svg"), "w") as f:
         f.write(svg)
-print(f"built: {len(eats)} cells, route {len(route)} steps, "
-      f"grows {BASE_LEN}->{BASE_LEN + len(growth_steps)} (cap {max_len}, +1 per {per_seg} eats)")
+print(f"built: {len(eats)}/{total_food} cells, route {len(route)} steps, grows {BASE_LEN}->{max_len}")
