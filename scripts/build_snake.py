@@ -174,10 +174,13 @@ def solve(grid, cap=999):
             if not aborted:
                 stuck = 0
                 continue
-        # walled off: chase the tail one step, tail retreat opens space
+        # walled off: chase the tail one step, tail retreat opens space.
+        # recompute head/blocked — a partially-walked path above moved the snake
         stuck += 1
         if stuck > 400:
             break
+        head = body[-1]
+        blocked = occupied - {head}
         tail = body[0]
         tpath = bfs(head, tail, blocked - {tail})
         nxt = None
