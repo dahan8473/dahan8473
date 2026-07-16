@@ -104,17 +104,16 @@ def solve(grid):
         return None
 
     remaining = {(c, r) for c in range(ncols) for r in range(len(grid[c])) if grid[c][r] > 0}
-    total_points = sum(grid[c][r] for c, r in remaining)
-    max_len = BASE_LEN + max(6, min(15, total_points // 12))
-    per_seg = max(2, total_points // (max_len - BASE_LEN))
+    planned = len(remaining)
+    max_len = BASE_LEN + max(6, min(15, planned // 6))
+    per_seg = max(2, planned // (max_len - BASE_LEN))
 
     pos = min(remaining, key=lambda cr: cr[0] * 10 + abs(cr[1] - 3)) if remaining else (0, 3)
-    route, eats, points = [pos], [], 0
+    route, eats = [pos], []
     growth_steps = []
     if pos in remaining:
         remaining.discard(pos)
         eats.append((0, pos))
-        points += grid[pos[0]][pos[1]]
     while remaining:
         cur_len = BASE_LEN + len(growth_steps)
         target = min(
@@ -128,8 +127,7 @@ def solve(grid):
             if step in remaining:
                 remaining.discard(step)
                 eats.append((len(route) - 1, step))
-                points += grid[step[0]][step[1]]
-                while points >= (len(growth_steps) + 1) * per_seg and \
+                while len(eats) >= (len(growth_steps) + 1) * per_seg and \
                         BASE_LEN + len(growth_steps) < max_len:
                     growth_steps.append(len(route) - 1)
         pos = route[-1]
@@ -254,4 +252,4 @@ for name in ("dark", "light"):
     with open(os.path.join(DIST, f"snake-{name}.svg"), "w") as f:
         f.write(svg)
 print(f"built: {len(eats)} cells, route {len(route)} steps, "
-      f"grows {BASE_LEN}->{BASE_LEN + len(growth_steps)} (cap {max_len}, {per_seg} pts/seg)")
+      f"grows {BASE_LEN}->{BASE_LEN + len(growth_steps)} (cap {max_len}, +1 per {per_seg} eats)")
