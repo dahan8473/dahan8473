@@ -27,6 +27,7 @@ jobs:
         run: |
           python scripts/build_banner.py
           python scripts/build_headers.py
+          python scripts/build_stack.py
       - name: commit if changed
         run: |
           git config user.name "github-actions[bot]"

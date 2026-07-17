@@ -19,15 +19,9 @@ MONO = "'Plex',ui-monospace,'SF Mono',Menlo,Consolas,monospace"
 
 # key -> (command shown after the prompt)
 SECTIONS = [
-    ("whoami", "whoami"),
-    ("building", "ps aux | grep building"),
-    ("live", "open --live"),
-    ("tethos", "cat tethos.id"),
-    ("projects", "tree ~/projects"),
-    ("stack", "cat stack.txt"),
+    ("work", "ls -t ~/projects"),
     ("commits", "git log  # davids commits this year"),
     ("wall", "wall"),
-    ("ping", "ping david"),
 ]
 
 THEMES = {
