@@ -20,6 +20,8 @@ from bisect import bisect_right
 from collections import deque
 from datetime import datetime, timedelta, timezone
 
+from theme import FRAME, RADIUS
+
 USER = "dahan8473"
 HERE = os.path.dirname(os.path.abspath(__file__))
 DIST = os.path.join(HERE, "..", "dist")
@@ -315,6 +317,7 @@ def build(theme_name, grid, counts, months, route, eats, growth_steps, max_len):
     w = MX * 2 + ncols * PITCH - GAP
     h = MTOP + 7 * PITCH - GAP + MBOT
     style = "\n".join(css)
+    f = FRAME[theme_name]
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}">
   <style>
     .lab {{ font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace; font-size:9.5px; fill:{t['text']}; }}
@@ -322,7 +325,9 @@ def build(theme_name, grid, counts, months, route, eats, growth_steps, max_len):
     @media (prefers-reduced-motion) {{ * {{ animation: none !important; }} }}
     {style}
   </style>
+  <rect x="1" y="1" width="{w-2}" height="{h-2}" rx="{RADIUS}" fill="{f['bg']}" stroke="{f['border']}"/>
   {chr(10).join('  ' + b for b in body_svg)}
+  <rect x="1" y="1" width="{w-2}" height="{h-2}" rx="{RADIUS}" fill="none" stroke="{f['border']}"/>
 </svg>
 """
 

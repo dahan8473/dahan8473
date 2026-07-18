@@ -4,7 +4,7 @@
   <img src="assets/banner-dark.svg" width="100%" alt="david liu · swe @ western · founder @ tethos">
 </picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/hdr/work-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/hdr/work-light.svg"><img src="assets/hdr/work-dark.svg" height="38" alt="$ ls -t ~/projects"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/hdr/work-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/hdr/work-light.svg"><img src="assets/hdr/work-dark.svg" width="100%" alt="$ ls -t ~/projects — what i'm building"></picture>
 
 **bumbot** — job applications on autopilot: finds postings, scores fit, writes cover letters in your voice, auto-applies · Next.js · Playwright · Claude · _private beta_<br>
 **[clawdash](https://github.com/dahan8473/clawdash)** — mission control for shirmp, my 24/7 ai agent on a mac mini · live websocket feed of sessions, cron, token burn<br>
@@ -15,21 +15,23 @@
 **kunlun** — bilingual fashion brand, chinese-mythology design system · _private_<br>
 **[wec_24](https://github.com/dahan8473/WEC_24)** — western engineering competition 2024 · unity · c#
 
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/hdr/stack-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/hdr/stack-light.svg"><img src="assets/hdr/stack-dark.svg" width="100%" alt="$ cat stack — what i build with"></picture>
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/stack-light.svg">
   <img src="assets/stack-dark.svg" width="100%" alt="stack: typescript, python, react, next.js, tailwind, three.js, fastapi, supabase, postgres, prisma, docker, vercel, unity, figma, claude">
 </picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/hdr/commits-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/hdr/commits-light.svg"><img src="assets/hdr/commits-dark.svg" height="38" alt="$ git log — davids commits this year"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/hdr/commits-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/hdr/commits-light.svg"><img src="assets/hdr/commits-dark.svg" width="100%" alt="$ git log — davids commits this year"></picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dahan8473/dahan8473/output/snake-dark.svg?v=6">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dahan8473/dahan8473/output/snake-light.svg?v=6">
-  <img src="https://raw.githubusercontent.com/dahan8473/dahan8473/output/snake-dark.svg?v=6" width="100%" alt="snake eating the contribution graph">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dahan8473/dahan8473/output/snake-dark.svg?v=7">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dahan8473/dahan8473/output/snake-light.svg?v=7">
+  <img src="https://raw.githubusercontent.com/dahan8473/dahan8473/output/snake-dark.svg?v=7" width="100%" alt="snake eating the contribution graph">
 </picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/hdr/wall-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/hdr/wall-light.svg"><img src="assets/hdr/wall-dark.svg" height="38" alt="$ wall"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/hdr/wall-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/hdr/wall-light.svg"><img src="assets/hdr/wall-dark.svg" width="100%" alt="$ wall — leave a message"></picture>
 
 sign it: [**leave a message**](https://github.com/dahan8473/dahan8473/issues/new?title=wall%7Cyour+message+here&body=edit+the+title%3A+keep+%22wall%7C%22+and+replace+the+rest+with+your+message%2C+then+submit.+a+bot+adds+you+to+the+wall+and+closes+this+issue.) · a workflow adds you here and closes the issue
 

@@ -3,6 +3,6 @@
   <rect x="1" y="1" width="958" height="38" rx="12" fill="#111826" stroke="#22406a"/>
   <circle cx="22" cy="20.0" r="6" fill="#ff5f56"/><circle cx="40" cy="20.0" r="6" fill="#ffbd2e"/><circle cx="58" cy="20.0" r="6" fill="#27c93f"/>
   <line x1="90" y1="9" x2="90" y2="31" stroke="#22406a"/>
-  <text x="106" y="25.2"><tspan fill="#58a6ff" font-weight="700">david@tethos</tspan><tspan fill="#6e7f95"> ~ % </tspan><tspan fill="#e6edf3">ls -t ~/projects</tspan></text>
-  <text x="938" y="25.2" text-anchor="end" fill="#6e7f95">what i'm building</text>
+  <text x="106" y="25.2"><tspan fill="#58a6ff" font-weight="700">david@tethos</tspan><tspan fill="#6e7f95"> ~ % </tspan><tspan fill="#e6edf3">cat stack</tspan></text>
+  <text x="938" y="25.2" text-anchor="end" fill="#6e7f95">what i build with</text>
 </svg>

@@ -38,12 +38,15 @@
       <stop offset=".5" stop-color="#0969da" stop-opacity=".06"/>
       <stop offset="1" stop-color="#0969da" stop-opacity="0"/>
     </linearGradient>
+    <clipPath id="frame"><rect x="0" y="0" width="960" height="380" rx="12"/></clipPath>
     <clipPath id="tc0"><rect x="300" y="303" width="302" height="21"><animate attributeName="width" values="0;302;302;0;0" keyTimes="0;0.09;0.22;0.25;1" dur="16s" begin="0s" repeatCount="indefinite"/></rect></clipPath>
     <clipPath id="tc1"><rect x="300" y="303" width="0" height="21"><animate attributeName="width" values="0;295;295;0;0" keyTimes="0;0.09;0.22;0.25;1" dur="16s" begin="4s" repeatCount="indefinite"/></rect></clipPath>
     <clipPath id="tc2"><rect x="300" y="303" width="0" height="21"><animate attributeName="width" values="0;271;271;0;0" keyTimes="0;0.09;0.22;0.25;1" dur="16s" begin="8s" repeatCount="indefinite"/></rect></clipPath>
     <clipPath id="tc3"><rect x="300" y="303" width="0" height="21"><animate attributeName="width" values="0;146;146;0;0" keyTimes="0;0.09;0.22;0.25;1" dur="16s" begin="12s" repeatCount="indefinite"/></rect></clipPath>
   </defs>
 
+  <rect x="1" y="1" width="958" height="378" rx="12" fill="#ffffff" stroke="#d0d7de"/>
+  <g clip-path="url(#frame)">
   <text class="h" x="36" y="26" xml:space="preserve">DAVIDLIU BIOS (TM)  COPYRIGHT (C) 2026</text>
   <text class="dim" x="924" y="26" text-anchor="end" xml:space="preserve">PORT......3000</text>
   <line x1="36" y1="40" x2="924" y2="40" stroke="#d0d7de"/>
@@ -236,4 +239,6 @@
   <g clip-path="url(#tc3)"><text class="typ" x="300" y="316" xml:space="preserve">open davidliu.work</text></g>
 
   <rect class="sweep" x="0" y="0" width="960" height="34" fill="url(#scan)"/>
+  </g>
+  <rect x="1" y="1" width="958" height="378" rx="12" fill="none" stroke="#d0d7de"/>
 </svg>

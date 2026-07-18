@@ -10,6 +10,8 @@ import base64
 import json
 import os
 
+from theme import FRAME, RADIUS
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 ASSETS = os.path.join(HERE, "..", "assets")
 
@@ -221,6 +223,7 @@ def banner(theme_name):
       .glitch, .sweep, .cur {{ animation:none; }}
     }}"""
 
+    fr = FRAME[theme_name]
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 380">
   <style>{css}
   </style>
@@ -231,9 +234,12 @@ def banner(theme_name):
       <stop offset=".5" stop-color="{t['scan']}" stop-opacity="{t['scan_op']}"/>
       <stop offset="1" stop-color="{t['scan']}" stop-opacity="0"/>
     </linearGradient>
+    <clipPath id="frame"><rect x="0" y="0" width="960" height="380" rx="{RADIUS}"/></clipPath>
     {tdefs}
   </defs>
 
+  <rect x="1" y="1" width="958" height="378" rx="{RADIUS}" fill="{fr['bg']}" stroke="{fr['border']}"/>
+  <g clip-path="url(#frame)">
   <text class="h" x="36" y="26" xml:space="preserve">DAVIDLIU BIOS (TM)  COPYRIGHT (C) 2026</text>
   <text class="dim" x="924" y="26" text-anchor="end" xml:space="preserve">PORT......3000</text>
   <line x1="36" y1="40" x2="924" y2="40" stroke="{t['rule']}"/>
@@ -264,6 +270,8 @@ def banner(theme_name):
   {ttexts}
 
   <rect class="sweep" x="0" y="0" width="960" height="34" fill="url(#scan)"/>
+  </g>
+  <rect x="1" y="1" width="958" height="378" rx="{RADIUS}" fill="none" stroke="{fr['border']}"/>
 </svg>
 """
 
@@ -333,7 +341,5 @@ os.makedirs(ASSETS, exist_ok=True)
 for name in ("dark", "light"):
     with open(os.path.join(ASSETS, f"banner-{name}.svg"), "w") as f:
         f.write(banner(name))
-with open(os.path.join(ASSETS, "tethos-card.svg"), "w") as f:
-    f.write(card())
-print("built: banner-dark.svg banner-light.svg tethos-card.svg")
+print("built: banner-dark.svg banner-light.svg")
 print("stats:", STATS)
