@@ -24,7 +24,7 @@ from theme import FRAME, RADIUS
 
 USER = "dahan8473"
 HERE = os.path.dirname(os.path.abspath(__file__))
-DIST = os.path.join(HERE, "..", "dist")
+DIST = os.path.join(HERE, "..", "assets")
 
 CELL, GAP = 11, 3
 PITCH = CELL + GAP
@@ -278,17 +278,17 @@ def build(theme_name, grid, counts, months, route, eats, growth_steps, max_len):
     # month labels
     for c, label in months:
         x, _ = xy(c, 0)
-        body_svg.append(f'<text class="lab" x="{x}" y="14">{label}</text>')
+        body_svg.append(f'<text class="snlab" x="{x}" y="14">{label}</text>')
     # legend
     lx = MX + ncols * PITCH - GAP - 5 * (CELL + 3) - 62
     ly = MTOP + 7 * PITCH + 8
-    body_svg.append(f'<text class="lab" x="{lx - 30}" y="{ly + 9}">less</text>')
+    body_svg.append(f'<text class="snlab" x="{lx - 30}" y="{ly + 9}">less</text>')
     for i in range(5):
         body_svg.append(
             f'<rect x="{lx + i * (CELL + 3)}" y="{ly}" width="{CELL}" height="{CELL}" '
             f'rx="2.5" fill="{t["levels"][i]}"/>'
         )
-    body_svg.append(f'<text class="lab" x="{lx + 5 * (CELL + 3) + 8}" y="{ly + 9}">more</text>')
+    body_svg.append(f'<text class="snlab" x="{lx + 5 * (CELL + 3) + 8}" y="{ly + 9}">more</text>')
 
     # commit counter, bottom left: one text state per eat
     total_commits = sum(counts[c][r] for step, (c, r) in eats)
@@ -296,7 +296,7 @@ def build(theme_name, grid, counts, months, route, eats, growth_steps, max_len):
     for step, (c, r) in eats:
         val += counts[c][r]
         states.append((step, val))
-    body_svg.append(f'<text class="lab" x="{MX}" y="{ly + 9}">$ commits eaten:</text>')
+    body_svg.append(f'<text class="snlab" x="{MX}" y="{ly + 9}">$ commits eaten:</text>')
     for idx, (step, v) in enumerate(states):
         a = pct(step)
         b = pct(states[idx + 1][0]) if idx + 1 < len(states) else 100.0
@@ -311,7 +311,7 @@ def build(theme_name, grid, counts, months, route, eats, growth_steps, max_len):
             f".n{idx} {{ animation: n{idx} {dur:.1f}s steps(1,end) infinite; }}"
         )
         body_svg.append(
-            f'<text class="cnt n{idx}" opacity="0" x="{MX + 102}" y="{ly + 9}">{v}/{total_commits}</text>'
+            f'<text class="sncnt n{idx}" opacity="0" x="{MX + 102}" y="{ly + 9}">{v}/{total_commits}</text>'
         )
 
     w = MX * 2 + ncols * PITCH - GAP
@@ -320,8 +320,8 @@ def build(theme_name, grid, counts, months, route, eats, growth_steps, max_len):
     f = FRAME[theme_name]
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}">
   <style>
-    .lab {{ font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace; font-size:9.5px; fill:{t['text']}; }}
-    .cnt {{ font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace; font-size:9.5px; fill:{t['snake']}; }}
+    .snlab {{ font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace; font-size:9.5px; fill:{t['text']}; }}
+    .sncnt {{ font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace; font-size:9.5px; fill:{t['snake']}; }}
     @media (prefers-reduced-motion) {{ * {{ animation: none !important; }} }}
     {style}
   </style>

@@ -41,13 +41,13 @@ def build(theme_name):
         cells.append(
             f'<g transform="translate({cx - ICON/2:.1f},{cy - ICON/2:.1f}) scale({s:.3f})">'
             f'<path d="{lg["path"]}" fill="{t["accent"]}"/></g>'
-            f'<text class="lab" x="{cx:.1f}" y="{cy + 32:.1f}" text-anchor="middle">{lg["label"]}</text>'
+            f'<text class="stlab" x="{cx:.1f}" y="{cy + 32:.1f}" text-anchor="middle">{lg["label"]}</text>'
         )
 
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}">
   <style>
     {FONT_FACE}
-    .lab {{ font-family:{MONO}; font-size:12px; fill:{t['dim']}; }}
+    .stlab {{ font-family:{MONO}; font-size:12px; fill:{t['dim']}; }}
   </style>
   <rect x="1" y="1" width="{w-2}" height="{h-2}" rx="{RADIUS}" fill="{t['bg']}" stroke="{t['border']}"/>
   {chr(10).join('  ' + c for c in cells)}
