@@ -28,14 +28,14 @@ GAP = 14          # vertical gap between panels
 WIDTH = 960
 
 PROJECTS = [
-    ("bumbot", "job apps on autopilot · find, score, write, apply · Next.js · Playwright · Claude", "private beta"),
-    ("clawdash", "mission control for shirmp, my 24/7 ai agent on a mac mini · sessions, cron, spend", ""),
-    ("tethos.ca", "the org platform, solo-built · 400+ users · 50+ api routes · walkable 3d dashboard", ""),
-    ("tsi sidekick", "rag microservice: drive + notion → pgvector, delta re-indexing, cited answers", "private"),
-    ("deja-view", "pinterest board in, 3d objects in your room out", "hackathon"),
-    ("biopilot", "drone imagery in, crop-health heatmaps out · deck.gl", "hackathon"),
-    ("kunlun", "bilingual fashion brand, chinese-mythology design system", "private"),
-    ("wec_24", "western engineering competition 2024 · unity · c#", ""),
+    ("tethos.ca", "solo-built platform for a 100-dev nonprofit · Next.js · Supabase · FastAPI · 400+ users", ""),
+    ("tsi brain", "rag engine answering org questions with citations · pgvector · delta re-indexing", "private"),
+    ("bumbot", "applies to jobs for you: scrapes, scores, writes, submits · Playwright · llm", "working"),
+    ("biopilot", "turns drone footage into crop-health maps · computer vision · deck.gl", "won telus hackathon"),
+    ("snake-and-commits", "your contribution graph as a real game of snake — the animation above", "open source"),
+    ("kunlun", "a fashion label built on chinese myth: brand + storefront · Next.js", "in progress"),
+    ("deja-view", "pinterest board in, 3d objects in your room out · three.js", "hackathon"),
+    ("clawdash", "terminal-ui mission control for a 24/7 ai agent · Next.js · websockets", ""),
 ]
 
 
