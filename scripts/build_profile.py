@@ -27,15 +27,16 @@ MONO = "'Plex',ui-monospace,'SF Mono',Menlo,Consolas,monospace"
 GAP = 14          # vertical gap between panels
 WIDTH = 960
 
+# (name, short desc + stack, right-aligned blue tag)
 PROJECTS = [
-    ("tethos.ca", "solo-built platform for a 100-dev nonprofit · Next.js · Supabase · FastAPI · 400+ users", ""),
-    ("tsi brain", "rag engine answering org questions with citations · pgvector · delta re-indexing", "private"),
-    ("bumbot", "applies to jobs for you: scrapes, scores, writes, submits · Playwright · llm", "working"),
-    ("biopilot", "turns drone footage into crop-health maps · computer vision · deck.gl", "won telus hackathon"),
-    ("snake-and-commits", "your contribution graph as a real game of snake — the animation above", "open source"),
-    ("kunlun", "a fashion label built on chinese myth: brand + storefront · Next.js", "in progress"),
-    ("deja-view", "pinterest board in, 3d objects in your room out · three.js", "hackathon"),
-    ("clawdash", "terminal-ui mission control for a 24/7 ai agent · Next.js · websockets", ""),
+    ("tethos.ca", "org platform, solo-built · Next.js · Supabase · FastAPI", "canadian npo"),
+    ("tsi brain", "rag engine with cited answers · pgvector · fastapi", "private"),
+    ("bumbot", "auto-applies to jobs for you · Playwright · llm", "working"),
+    ("biopilot", "drone footage to crop-health maps · deck.gl", "2nd telus hackathon"),
+    ("snake-and-commits", "contribution graph as a game of snake · svg", "open source"),
+    ("kunlun", "chinese-myth fashion brand · Next.js", "in progress"),
+    ("deja-view", "pinterest board to 3d room objects · three.js", "hackathon"),
+    ("clawdash", "mission control for a 24/7 ai agent · Next.js", "inactive"),
 ]
 
 
@@ -66,12 +67,16 @@ def worklist_svg(theme, y):
     rows = []
     for i, (nm, desc, tag) in enumerate(PROJECTS):
         ry = 20 + i * row_h
-        tagsvg = f'<tspan fill="{t["accent"]}"> · {esc(tag)}</tspan>' if tag else ""
         rows.append(
             f'<text x="10" y="{ry}" font-size="14.5">'
             f'<tspan fill="{name_col}" font-weight="700">{esc(nm)}</tspan>'
-            f'<tspan fill="{desc_col}">  {esc(desc)}</tspan>{tagsvg}</text>'
+            f'<tspan fill="{desc_col}">  {esc(desc)}</tspan></text>'
         )
+        if tag:  # blue status, right-aligned to the panel edge
+            rows.append(
+                f'<text x="{WIDTH - 22}" y="{ry}" font-size="14.5" text-anchor="end" '
+                f'fill="{t["accent"]}">{esc(tag)}</text>'
+            )
     h = 20 + len(PROJECTS) * row_h
     body = f'<g transform="translate(0,{y:.1f})" font-family="{MONO}">' + "".join(rows) + "</g>"
     return body, h
