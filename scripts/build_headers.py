@@ -19,6 +19,7 @@ MONO = "'Plex',ui-monospace,'SF Mono',Menlo,Consolas,monospace"
 
 # key -> (command, right-aligned label)
 SECTIONS = [
+    ("intro", "whoami", "who i am"),
     ("work", "ls -t ~/projects", "what i'm building"),
     ("stack", "cat stack", "what i build with"),
     ("commits", "git log", "davids commits this year"),

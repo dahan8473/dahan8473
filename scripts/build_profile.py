@@ -113,6 +113,7 @@ def compose(theme):
         parts.append(svg)
         y += h + GAP
 
+    add_panel(f"hdr/intro-{theme}.svg")
     add_panel(f"banner-{theme}.svg")
     add_panel(f"hdr/work-{theme}.svg")
     add_native(worklist_svg)
