@@ -44,24 +44,22 @@ def esc(s):
 
 
 # ---------------------------------------------------------------- portrait
-def ascii_portrait(cols=58, bg_cut=147, floor=104, gamma=0.9):
-    """Negative-space portrait: face rendered in bright chars, hair + bright
-    passport background dropped to black. avatar.png is a face crop; the bright
-    background is flood-filled away from the border (hair walls it off from the
-    face), then only the face highlights survive as dense characters."""
+def ascii_portrait(cols=58, bg_cut=145, keep_frac=0.46, erode=4):
+    """Negative-space portrait for a backlit face: flood-remove the bright
+    background, erode the boundary ring, then histogram-equalize ONLY the head
+    pixels so a dim face separates from dim hair. The brightest keep_frac of the
+    head renders as characters; everything else is black. avatar.png is a face crop."""
     from collections import deque
 
     import numpy as np
-    from PIL import Image, ImageEnhance, ImageFilter
+    from PIL import Image, ImageFilter
 
     img = Image.open(os.path.join(HERE, "avatar.png")).convert("L")
     img = img.filter(ImageFilter.MedianFilter(3))
-    img = ImageEnhance.Contrast(img).enhance(1.25)
-    img = img.filter(ImageFilter.UnsharpMask(radius=6, percent=180, threshold=2))
     a = np.asarray(img).astype(np.float32)
-
-    # flood-fill the bright background from the border; hair (dark) stops it
     H, W = a.shape
+
+    # flood-fill the bright background inward from the border; dark hair walls it off
     bright = a > bg_cut
     seen = np.zeros_like(bright)
     q = deque()
@@ -79,23 +77,32 @@ def ascii_portrait(cols=58, bg_cut=147, floor=104, gamma=0.9):
             ny, nx = y + dy, x + dx
             if 0 <= ny < H and 0 <= nx < W and bright[ny, nx] and not seen[ny, nx]:
                 seen[ny, nx] = True; q.append((ny, nx))
-    a[seen] = 0
+    head = ~seen
+    for _ in range(erode):  # strip the bright rim at the hair/background edge
+        e = head.copy()
+        e[1:, :] &= head[:-1, :]; e[:-1, :] &= head[1:, :]
+        e[:, 1:] &= head[:, :-1]; e[:, :-1] &= head[:, 1:]
+        head = e
 
-    # crush hair/shadow below floor, stretch the face band, gamma-brighten
-    a = np.clip((a - floor) / (bg_cut - floor), 0, 1) ** gamma
-    im = Image.fromarray((a * 255).astype(np.uint8))
+    # equalize only the head pixels (rank by brightness) so face separates from hair
+    vals = a[head]
+    ranks = np.empty(len(vals), dtype=np.float32)
+    ranks[np.argsort(vals)] = np.linspace(0, 1, len(vals)) if len(vals) else 0
+    eq = np.zeros_like(a)
+    eq[head] = ranks
+    thr = 1 - keep_frac
+    tone = np.clip((eq - thr) / max(1 - thr, 1e-6), 0, 1)
+    tone[~head] = 0
+    im = Image.fromarray((tone * 255).astype(np.uint8))
 
     w, h = im.size
     rows = max(1, round(cols * (h / w) * 0.52))
     im = im.resize((cols, rows))
     px = np.asarray(im)
     ramp = " .:-=+*#%@@"  # bright pixel -> dense char (face lit, black elsewhere)
-    lines = []
-    for r in range(rows):
-        lines.append("".join(
-            ramp[min(int(px[r, c]) * (len(ramp) - 1) // 255, len(ramp) - 1)] for c in range(cols)
-        ))
-    return lines
+    return ["".join(
+        ramp[min(int(px[r, c]) * (len(ramp) - 1) // 255, len(ramp) - 1)] for c in range(cols)
+    ) for r in range(rows)]
 
 
 # ---------------------------------------------------------------- LED name
