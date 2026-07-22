@@ -86,7 +86,7 @@ def ascii_portrait(cols=58, bg_cut=147, floor=90, gamma=1.0):
     im = Image.fromarray((a * 255).astype(np.uint8))
 
     w, h = im.size
-    rows = max(1, round(cols * (h / w) * 0.52))
+    rows = max(1, round(cols * (h / w) * 0.6))
     im = im.resize((cols, rows))
     px = np.asarray(im)
     ramp = " .:-=+*#%@@"  # bright pixel -> dense char (face lit, black elsewhere)
@@ -178,7 +178,7 @@ def banner(theme_name):
     t = THEMES[theme_name]
     port = ascii_portrait()
     p_lines = "\n  ".join(
-        f'<text class="port" x="36" y="{94 + i * 6.4:.1f}" xml:space="preserve">{esc(ln)}</text>'
+        f'<text class="port" x="36" y="{94 + i * 5.5:.1f}" xml:space="preserve">{esc(ln)}</text>'
         for i, ln in enumerate(port)
     )
     rects = name_rects(280, 84)
@@ -199,7 +199,7 @@ def banner(theme_name):
     .menu {{ fill:{t['menu']}; font-size:12px; letter-spacing:2px; }}
     .sel  {{ fill:{t['sel']}; font-size:12px; letter-spacing:2px; }}
     .px   {{ fill:{t['px']}; }}
-    .port {{ fill:{t['portrait']}; font-size:6.4px; opacity:.95; }}
+    .port {{ fill:{t['portrait']}; font-size:5.5px; opacity:.95; }}
     .ok   {{ fill:{t['ok']}; font-size:13.5px; opacity:0; animation:on .01s steps(1) forwards; }}
     .okb  {{ fill:{t['okb']}; }}
     .liv  {{ fill:{t['live']}; }}
@@ -251,7 +251,7 @@ def banner(theme_name):
   <text class="menu" x="924" y="62" text-anchor="end" xml:space="preserve">MEM TEST: 640K OK</text>
 
   {p_lines}
-  <text class="dim" x="36" y="{94 + len(port) * 6.4 + 12:.0f}" xml:space="preserve">[ SELF TEST: PASS ]</text>
+  <text class="dim" x="36" y="{94 + len(port) * 5.5 + 12:.0f}" xml:space="preserve">[ SELF TEST: PASS ]</text>
 
   <g class="glitch">
     {glow_layer}
