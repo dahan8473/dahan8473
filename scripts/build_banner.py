@@ -44,7 +44,7 @@ def esc(s):
 
 
 # ---------------------------------------------------------------- portrait
-def ascii_portrait(cols=58, bg_cut=147, floor=104, gamma=0.9):
+def ascii_portrait(cols=58, bg_cut=147, floor=90, gamma=1.0):
     """Negative-space portrait: face rendered in bright chars, hair + bright
     passport background dropped to black. avatar.png is a face crop; the bright
     background is flood-filled away from the border (hair walls it off from the
@@ -56,7 +56,7 @@ def ascii_portrait(cols=58, bg_cut=147, floor=104, gamma=0.9):
 
     img = Image.open(os.path.join(HERE, "avatar.png")).convert("L")
     img = img.filter(ImageFilter.MedianFilter(3))
-    img = ImageEnhance.Contrast(img).enhance(1.25)
+    img = ImageEnhance.Contrast(img).enhance(1.08)
     img = img.filter(ImageFilter.UnsharpMask(radius=6, percent=180, threshold=2))
     a = np.asarray(img).astype(np.float32)
 
@@ -243,11 +243,11 @@ def banner(theme_name):
   <text class="h" x="36" y="26" xml:space="preserve">DAVIDLIU BIOS (TM)  COPYRIGHT (C) 2026</text>
   <text class="dim" x="924" y="26" text-anchor="end" xml:space="preserve">PORT......3000</text>
   <line x1="36" y1="40" x2="924" y2="40" stroke="{t['rule']}"/>
-  <text class="menu" x="36" y="62">SUMMARY</text>
-  <text class="sel" x="150" y="62">&gt; BOOT SEQ</text>
-  <text class="menu" x="290" y="62">AGENTS</text>
-  <text class="menu" x="400" y="62">SHIP</text>
-  <text class="menu" x="480" y="62">MORE+</text>
+  <text class="sel" x="36" y="62">&gt; WHOAMI</text>
+  <text class="menu" x="150" y="62">PROJECTS</text>
+  <text class="menu" x="300" y="62">STACK</text>
+  <text class="menu" x="400" y="62">COMMITS</text>
+  <text class="menu" x="530" y="62">WALL</text>
   <text class="menu" x="924" y="62" text-anchor="end" xml:space="preserve">MEM TEST: 640K OK</text>
 
   {p_lines}

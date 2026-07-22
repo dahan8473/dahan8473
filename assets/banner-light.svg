@@ -50,51 +50,51 @@
   <text class="h" x="36" y="26" xml:space="preserve">DAVIDLIU BIOS (TM)  COPYRIGHT (C) 2026</text>
   <text class="dim" x="924" y="26" text-anchor="end" xml:space="preserve">PORT......3000</text>
   <line x1="36" y1="40" x2="924" y2="40" stroke="#d0d7de"/>
-  <text class="menu" x="36" y="62">SUMMARY</text>
-  <text class="sel" x="150" y="62">&gt; BOOT SEQ</text>
-  <text class="menu" x="290" y="62">AGENTS</text>
-  <text class="menu" x="400" y="62">SHIP</text>
-  <text class="menu" x="480" y="62">MORE+</text>
+  <text class="sel" x="36" y="62">&gt; WHOAMI</text>
+  <text class="menu" x="150" y="62">PROJECTS</text>
+  <text class="menu" x="300" y="62">STACK</text>
+  <text class="menu" x="400" y="62">COMMITS</text>
+  <text class="menu" x="530" y="62">WALL</text>
   <text class="menu" x="924" y="62" text-anchor="end" xml:space="preserve">MEM TEST: 640K OK</text>
 
   <text class="port" x="36" y="94.0" xml:space="preserve">                                                          </text>
-  <text class="port" x="36" y="100.4" xml:space="preserve">                   :::--          ...                     </text>
-  <text class="port" x="36" y="106.8" xml:space="preserve">            . ..                                          </text>
-  <text class="port" x="36" y="113.2" xml:space="preserve">          .:                                              </text>
-  <text class="port" x="36" y="119.6" xml:space="preserve">                                                          </text>
-  <text class="port" x="36" y="126.0" xml:space="preserve">                                                          </text>
-  <text class="port" x="36" y="132.4" xml:space="preserve">    .                                                     </text>
+  <text class="port" x="36" y="100.4" xml:space="preserve">                . .:::-=          .:.                     </text>
+  <text class="port" x="36" y="106.8" xml:space="preserve">            ....                                          </text>
+  <text class="port" x="36" y="113.2" xml:space="preserve">          .:.                                             </text>
+  <text class="port" x="36" y="119.6" xml:space="preserve">                                             .            </text>
+  <text class="port" x="36" y="126.0" xml:space="preserve">      .                                        .          </text>
+  <text class="port" x="36" y="132.4" xml:space="preserve">    ..                                           .        </text>
   <text class="port" x="36" y="138.8" xml:space="preserve">                          :                               </text>
-  <text class="port" x="36" y="145.2" xml:space="preserve">                                          .:              </text>
-  <text class="port" x="36" y="151.6" xml:space="preserve">                           +               .              </text>
-  <text class="port" x="36" y="158.0" xml:space="preserve">             .:            *+         .:              .   </text>
-  <text class="port" x="36" y="164.4" xml:space="preserve">           ..:      -:     =%*.-.                         </text>
-  <text class="port" x="36" y="170.8" xml:space="preserve">          .=.  =+:  %- .   -%@*=+                         </text>
-  <text class="port" x="36" y="177.2" xml:space="preserve">          .:- =++= :@-=*++ .*%%*%:.:                      </text>
-  <text class="port" x="36" y="183.6" xml:space="preserve">         :.  :@:*- .%.=%## ::+%##*.      :.               </text>
-  <text class="port" x="36" y="190.0" xml:space="preserve">         .   *+.#- .- -@@* =#.-#%#:.=                     </text>
-  <text class="port" x="36" y="196.4" xml:space="preserve">    .    :    : -. = :%@@+=%####=-                        </text>
-  <text class="port" x="36" y="202.8" xml:space="preserve">           :=*#+*:-= *%@@@%%**#%:: =#. .:                 </text>
-  <text class="port" x="36" y="209.2" xml:space="preserve">          =*%@@@@#+%*@@@@@@@@@@@%#%@#.-+=                .</text>
-  <text class="port" x="36" y="215.6" xml:space="preserve">          =***#**#++%%@@@@@@@@@@%#**.--:..               .</text>
-  <text class="port" x="36" y="222.0" xml:space="preserve">       .:  :.=#. .*+=%@@@@@@@@@**+. -*:     .            .</text>
-  <text class="port" x="36" y="228.4" xml:space="preserve">       -*-.=+*###@%##@@@@@@@@@@%%%%%%*+=+=+++.           .</text>
-  <text class="port" x="36" y="234.8" xml:space="preserve">     .+=#%*%@@@@@@@@@@@@@@@@@%@@@@@@@@@@@@%%+-.         .-</text>
-  <text class="port" x="36" y="241.2" xml:space="preserve">     .**%@@@@@@@@@@@@@@@@@@@%%@@@@@@@@@@@@@@#=          ::</text>
-  <text class="port" x="36" y="247.6" xml:space="preserve">   : :+*@@@@@@@@@@@@@@@@@@@@%#%%@@@@@@@@@@@@%= .+.      -:</text>
-  <text class="port" x="36" y="254.0" xml:space="preserve">   =-.+#@@@@@@@@@@@@@@@@@@@@@#+*@@@@@@@@@@@@%=..%       =:</text>
-  <text class="port" x="36" y="260.4" xml:space="preserve">    =.-*%@@@@@@@@@@@%@@@@@@@@%+=%@@@@@@@@@@@*- +-:.    +*.</text>
-  <text class="port" x="36" y="266.8" xml:space="preserve">: .::==+#@@@@@@@@@@@@@%#%@@@%#%@=%@@@@@@@@@#=:.:.%-    =: </text>
-  <text class="port" x="36" y="273.2" xml:space="preserve">*.:##:-+*%@@@@@@@@@@#++++++++*++:#@@@@@@@@@*--.=@%.   =-  </text>
-  <text class="port" x="36" y="279.6" xml:space="preserve">#=..:.+#+#@@@@@@@@@@@%%%@@@@@%**%@@@@@@@@%#*-+-::     :   </text>
-  <text class="port" x="36" y="286.0" xml:space="preserve">=*=:  -%+*%@@@@@@@@@@@@@@@@@@@@@@%@@@@@@@%*=:+        ..  </text>
-  <text class="port" x="36" y="292.4" xml:space="preserve">.+#==  ##*#%#@@@@@@@%#++++++==+#@%@@@@@@@*+--:       ...  </text>
-  <text class="port" x="36" y="298.8" xml:space="preserve"> -*-.   #=+#*#@@@@#=-........ . :=*%@@@@*=-.-        =-   </text>
-  <text class="port" x="36" y="305.2" xml:space="preserve"> ..-:.  :+-+**%%@@@@%+++****+:-=+#%%%%%+-: .      . :-:   </text>
-  <text class="port" x="36" y="311.6" xml:space="preserve">...-==:   :--=**%%@@@@%#*++==+##%%%%#*=.          :*+:.   </text>
-  <text class="port" x="36" y="318.0" xml:space="preserve">. ::+*+:    .:=+**#%@@@@%%%%%%%%%%**+-.         -*##:     </text>
-  <text class="port" x="36" y="324.4" xml:space="preserve"> .. :=**-    ..:=**%%@@@@@@@@@@%%**+:.         -+#-       </text>
-  <text class="port" x="36" y="330.8" xml:space="preserve">   .-.=%*:   ::..==+#%%%%@%%@@%**++:          -+-:        </text>
+  <text class="port" x="36" y="145.2" xml:space="preserve">            .                             .:       .      </text>
+  <text class="port" x="36" y="151.6" xml:space="preserve">                           +  .            .              </text>
+  <text class="port" x="36" y="158.0" xml:space="preserve">.            .-            *+...      .:              .   </text>
+  <text class="port" x="36" y="164.4" xml:space="preserve">           ..-.     =:     =%*:-:                         </text>
+  <text class="port" x="36" y="170.8" xml:space="preserve">          .=.  =+:  %- .   -%%*=+                         </text>
+  <text class="port" x="36" y="177.2" xml:space="preserve">          .-- =++= :@-=**+ :*%#*%-.:                      </text>
+  <text class="port" x="36" y="183.6" xml:space="preserve">         :.  :@:*- .%.=%## :-+%#**.      :.               </text>
+  <text class="port" x="36" y="190.0" xml:space="preserve">         .   **:#-.:- -%@* =#.-#%#-:=                     </text>
+  <text class="port" x="36" y="196.4" xml:space="preserve">    .    :   .: -..= :%@@*=%####=-                        </text>
+  <text class="port" x="36" y="202.8" xml:space="preserve">           -=+#+*:-= *%@@@%%#*#%-: =#. .:                 </text>
+  <text class="port" x="36" y="209.2" xml:space="preserve">          =*%%@@@#+%#%@@@@@@@@@@%#%@#.=+=                .</text>
+  <text class="port" x="36" y="215.6" xml:space="preserve">          =******#++%#@@@@@@@@@@%#**.--:::               .</text>
+  <text class="port" x="36" y="222.0" xml:space="preserve">       :: .:.=#. .*+=%@@@@@@@@@***. -*:  . ..            .</text>
+  <text class="port" x="36" y="228.4" xml:space="preserve">       -*-.=+*###@%##@@@@@@@%@@%%%%#%*+===+++:           :</text>
+  <text class="port" x="36" y="234.8" xml:space="preserve">     :+=##*%@@@@@@@@@@@@@@@%%%@@@@@@@@@@@%##+=:         .=</text>
+  <text class="port" x="36" y="241.2" xml:space="preserve">     :**#@@@@@@@@@@@@@@@@@@@%#%%@@@@@@@@@@@%#+.         :-</text>
+  <text class="port" x="36" y="247.6" xml:space="preserve">   :.-+*%@@@@@@@@@@@@@@@@@@@%##%@@@@@@@@@@@@%+..+.      --</text>
+  <text class="port" x="36" y="254.0" xml:space="preserve">   =-.+*%@@@@@@@@@@@@%%@@@@@%*+*@@@@@@@@@@@%#+:.%       +=</text>
+  <text class="port" x="36" y="260.4" xml:space="preserve">    =.=*#@@@@@@@@@@@%%%@@@@@@#+=%@@@@@@@@@@%*=.+-::    +*:</text>
+  <text class="port" x="36" y="266.8" xml:space="preserve">- .::==+#%@@@@@@@@@@%@%#%@@@%*#%=%@@@@@@@@%#+-::.#-    += </text>
+  <text class="port" x="36" y="273.2" xml:space="preserve">*::#*:=**#%@@@@@@@@@#++++++++*++:#@@@@@@@@%*==:+@%.  .=+. </text>
+  <text class="port" x="36" y="279.6" xml:space="preserve">*=:::.+*+#%@@@@@@@@@@%%%@@%@@%**%%@@@@@@@#**=+:::    .=.  </text>
+  <text class="port" x="36" y="286.0" xml:space="preserve">=*=-. -%+*#%@@@@@@@@@@@@@@%@@@%%%%%@@@@@%#*=-+        ::  </text>
+  <text class="port" x="36" y="292.4" xml:space="preserve">=+*+=  ##*###%@@@@@@%*+++**+==+*%#%@@@@@%*+==:      .-:.  </text>
+  <text class="port" x="36" y="298.8" xml:space="preserve">.+@*:   #++**#%@@%#=-:........:.:=*#%%%%*+=--        ++   </text>
+  <text class="port" x="36" y="305.2" xml:space="preserve"> :+#+:  :+=+**#%%%%@%*++****+-==+####%#+=-::      ..:-+   </text>
+  <text class="port" x="36" y="311.6" xml:space="preserve">::=#%+-.  :==++*#%%%%%#**+++++*######*+-:.        -**-.   </text>
+  <text class="port" x="36" y="318.0" xml:space="preserve">-:%%%*+-    .-=+**##%%%%#%#%%##%##**+=:.   .    =+*#=.    </text>
+  <text class="port" x="36" y="324.4" xml:space="preserve">..-+%#**-   ...:+**##%@@@@@@@%%%#**+-.     .   -*%=..     </text>
+  <text class="port" x="36" y="330.8" xml:space="preserve">..:-+++#*:  .--..=++*##%%%%%%%#**++:   .....  -*+=        </text>
   <text class="dim" x="36" y="349" xml:space="preserve">[ SELF TEST: PASS ]</text>
 
   <g class="glitch">
