@@ -244,7 +244,7 @@
   <text class="ok d1" x="280" y="210" xml:space="preserve"><tspan class="okb">[ OK ]</tspan>  swe @ western university · 4th year</text>
   <text class="ok d2" x="280" y="232" xml:space="preserve"><tspan class="okb">[ OK ]</tspan>  swe intern @ j.d. power · founder &amp; president @ tethos</text>
   <text class="ok d3" x="280" y="254" xml:space="preserve"><tspan class="liv">[LIVE]</tspan>  816 contributions past year · 1 day streak</text>
-  <text class="ok d4" x="280" y="276" xml:space="preserve"><tspan class="liv">[LIVE]</tspan>  last push: tsi-website · 13d ago</text>
+  <text class="ok d4" x="280" y="276" xml:space="preserve"><tspan class="liv">[LIVE]</tspan>  last push: tsi-website · 14d ago</text>
 
   <text class="pr" x="280" y="316">$</text>
   <rect class="cur" x="291" y="305" width="6" height="13" fill="#58a6ff"/>
@@ -920,7 +920,6 @@
     <rect class="c0_0" x="16" y="26" width="11" height="11" rx="2.5" fill="#161b22"/>
   <rect class="c0_1" x="16" y="40" width="11" height="11" rx="2.5" fill="#161b22"/>
   <rect class="c0_2" x="16" y="54" width="11" height="11" rx="2.5" fill="#161b22"/>
-  <rect class="c0_3" x="16" y="68" width="11" height="11" rx="2.5" fill="#161b22"/>
   <rect class="c1_0" x="30" y="26" width="11" height="11" rx="2.5" fill="#161b22"/>
   <rect class="c1_1" x="30" y="40" width="11" height="11" rx="2.5" fill="#161b22"/>
   <rect class="c1_2" x="30" y="54" width="11" height="11" rx="2.5" fill="#161b22"/>
@@ -1283,6 +1282,7 @@
   <rect class="c52_2" x="744" y="54" width="11" height="11" rx="2.5" fill="#161b22"/>
   <rect class="c52_3" x="744" y="68" width="11" height="11" rx="2.5" fill="#161b22"/>
   <rect class="c52_4" x="744" y="82" width="11" height="11" rx="2.5" fill="#161b22"/>
+  <rect class="c52_5" x="744" y="96" width="11" height="11" rx="2.5" fill="#161b22"/>
   <text class="snlab" x="16" y="14">aug</text>
   <text class="snlab" x="72" y="14">sep</text>
   <text class="snlab" x="128" y="14">oct</text>
