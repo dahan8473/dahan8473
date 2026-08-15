@@ -619,7 +619,6 @@
   <rect x="1" y="1" width="769" height="149" rx="12" fill="#ffffff" stroke="#d0d7de"/>
     <rect class="c0_0" x="16" y="26" width="11" height="11" rx="2.5" fill="#ebedf0"/>
   <rect class="c0_1" x="16" y="40" width="11" height="11" rx="2.5" fill="#ebedf0"/>
-  <rect class="c0_2" x="16" y="54" width="11" height="11" rx="2.5" fill="#ebedf0"/>
   <rect class="c1_0" x="30" y="26" width="11" height="11" rx="2.5" fill="#ebedf0"/>
   <rect class="c1_1" x="30" y="40" width="11" height="11" rx="2.5" fill="#ebedf0"/>
   <rect class="c1_2" x="30" y="54" width="11" height="11" rx="2.5" fill="#ebedf0"/>
@@ -983,6 +982,7 @@
   <rect class="c52_3" x="744" y="68" width="11" height="11" rx="2.5" fill="#ebedf0"/>
   <rect class="c52_4" x="744" y="82" width="11" height="11" rx="2.5" fill="#ebedf0"/>
   <rect class="c52_5" x="744" y="96" width="11" height="11" rx="2.5" fill="#ebedf0"/>
+  <rect class="c52_6" x="744" y="110" width="11" height="11" rx="2.5" fill="#ebedf0"/>
   <text class="snlab" x="16" y="14">aug</text>
   <text class="snlab" x="72" y="14">sep</text>
   <text class="snlab" x="128" y="14">oct</text>
