@@ -569,7 +569,6 @@
   <rect class="c0_3" x="16" y="68" width="11" height="11" rx="2.5" fill="#161b22"/>
   <rect class="c0_4" x="16" y="82" width="11" height="11" rx="2.5" fill="#161b22"/>
   <rect class="c0_5" x="16" y="96" width="11" height="11" rx="2.5" fill="#161b22"/>
-  <rect class="c0_6" x="16" y="110" width="11" height="11" rx="2.5" fill="#161b22"/>
   <rect class="c1_0" x="30" y="26" width="11" height="11" rx="2.5" fill="#161b22"/>
   <rect class="c1_1" x="30" y="40" width="11" height="11" rx="2.5" fill="#161b22"/>
   <rect class="c1_2" x="30" y="54" width="11" height="11" rx="2.5" fill="#161b22"/>
@@ -929,6 +928,7 @@
   <rect class="c51_6" x="730" y="110" width="11" height="11" rx="2.5" fill="#161b22"/>
   <rect class="c52_0" x="744" y="26" width="11" height="11" rx="2.5" fill="#161b22"/>
   <rect class="c52_1" x="744" y="40" width="11" height="11" rx="2.5" fill="#161b22"/>
+  <rect class="c52_2" x="744" y="54" width="11" height="11" rx="2.5" fill="#161b22"/>
   <text class="snlab" x="44" y="14">sep</text>
   <text class="snlab" x="100" y="14">oct</text>
   <text class="snlab" x="156" y="14">nov</text>
