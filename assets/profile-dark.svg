@@ -244,7 +244,7 @@
   <text class="ok d1" x="280" y="210" xml:space="preserve"><tspan class="okb">[ OK ]</tspan>  swe @ western university · 4th year</text>
   <text class="ok d2" x="280" y="232" xml:space="preserve"><tspan class="okb">[ OK ]</tspan>  swe intern @ j.d. power · founder &amp; president @ tethos</text>
   <text class="ok d3" x="280" y="254" xml:space="preserve"><tspan class="liv">[LIVE]</tspan>  847 contributions past year · 1 day streak</text>
-  <text class="ok d4" x="280" y="276" xml:space="preserve"><tspan class="liv">[LIVE]</tspan>  last push: tsi-website · 4d ago</text>
+  <text class="ok d4" x="280" y="276" xml:space="preserve"><tspan class="liv">[LIVE]</tspan>  last push: tsi-website · 2d ago</text>
 
   <text class="pr" x="280" y="316">$</text>
   <rect class="cur" x="291" y="305" width="6" height="13" fill="#58a6ff"/>
@@ -769,10 +769,6 @@
 .c50_1 { animation: kc50_1 46.7s linear infinite; }
 @keyframes kc50_2 { 0.0% { fill:#161b22; } 92.884% { fill:#161b22; } 92.934% { fill:#c9e4ff; } 93.148% { fill:#79c0ff; } 93.79% { fill:#58a6ff; } 95.075% { fill:#3f83d6; } 97.43% { fill:#2e62a8; } 100% { fill:#2e62a8; } }
 .c50_2 { animation: kc50_2 46.7s linear infinite; }
-@keyframes kc50_3 { 0.0% { fill:#161b22; } 83.676% { fill:#161b22; } 83.726% { fill:#c9e4ff; } 83.94% { fill:#79c0ff; } 84.582% { fill:#58a6ff; } 85.867% { fill:#3f83d6; } 88.223% { fill:#2e62a8; } 93.95400000000001% { fill:#2e62a8; } 94.004% { fill:#161b22; } 100% { fill:#161b22; } }
-.c50_3 { animation: kc50_3 46.7s linear infinite; }
-@keyframes kc50_4 { 0.0% { fill:#161b22; } 83.89% { fill:#161b22; } 83.94% { fill:#c9e4ff; } 84.154% { fill:#79c0ff; } 84.797% { fill:#58a6ff; } 86.081% { fill:#3f83d6; } 88.437% { fill:#2e62a8; } 94.168% { fill:#2e62a8; } 94.218% { fill:#161b22; } 100% { fill:#161b22; } }
-.c50_4 { animation: kc50_4 46.7s linear infinite; }
 @keyframes kc50_6 { 0.0% { fill:#161b22; } 84.747% { fill:#161b22; } 84.797% { fill:#c9e4ff; } 85.011% { fill:#79c0ff; } 85.653% { fill:#58a6ff; } 86.938% { fill:#3f83d6; } 89.293% { fill:#2e62a8; } 100% { fill:#2e62a8; } }
 .c50_6 { animation: kc50_6 46.7s linear infinite; }
 @keyframes kc51_0 { 0.0% { fill:#161b22; } 82.819% { fill:#161b22; } 82.869% { fill:#c9e4ff; } 83.084% { fill:#79c0ff; } 83.726% { fill:#58a6ff; } 85.011% { fill:#3f83d6; } 87.366% { fill:#2e62a8; } 93.098% { fill:#2e62a8; } 93.148% { fill:#161b22; } 93.526% { fill:#161b22; } 93.576% { fill:#c9e4ff; } 93.79% { fill:#79c0ff; } 94.433% { fill:#58a6ff; } 95.717% { fill:#3f83d6; } 98.073% { fill:#2e62a8; } 100% { fill:#2e62a8; } }
@@ -795,6 +791,10 @@
 .c52_1 { animation: kc52_1 46.7s linear infinite; }
 @keyframes kc52_2 { 0.0% { fill:#0f4526; } 94.168% { fill:#0f4526; } 94.218% { fill:#c9e4ff; } 94.433% { fill:#79c0ff; } 95.075% { fill:#58a6ff; } 96.36% { fill:#3f83d6; } 98.715% { fill:#2e62a8; } 100% { fill:#2e62a8; } }
 .c52_2 { animation: kc52_2 46.7s linear infinite; }
+@keyframes kc52_3 { 0.0% { fill:#161b22; } 83.676% { fill:#161b22; } 83.726% { fill:#c9e4ff; } 83.94% { fill:#79c0ff; } 84.582% { fill:#58a6ff; } 85.867% { fill:#3f83d6; } 88.223% { fill:#2e62a8; } 93.95400000000001% { fill:#2e62a8; } 94.004% { fill:#161b22; } 100% { fill:#161b22; } }
+.c52_3 { animation: kc52_3 46.7s linear infinite; }
+@keyframes kc52_4 { 0.0% { fill:#161b22; } 83.89% { fill:#161b22; } 83.94% { fill:#c9e4ff; } 84.154% { fill:#79c0ff; } 84.797% { fill:#58a6ff; } 86.081% { fill:#3f83d6; } 88.437% { fill:#2e62a8; } 94.168% { fill:#2e62a8; } 94.218% { fill:#161b22; } 100% { fill:#161b22; } }
+.c52_4 { animation: kc52_4 46.7s linear infinite; }
 @keyframes n1 { 0% { opacity:0; } 0.0% { opacity:1; } 1.927% { opacity:0; } 100% { opacity:0; } }
 .n1 { animation: n1 46.7s steps(1,end) infinite; }
 @keyframes n2 { 0% { opacity:0; } 1.927% { opacity:1; } 2.355% { opacity:0; } 100% { opacity:0; } }
@@ -987,7 +987,6 @@
   <rect class="c0_1" x="16" y="40" width="11" height="11" rx="2.5" fill="#161b22"/>
   <rect class="c0_2" x="16" y="54" width="11" height="11" rx="2.5" fill="#161b22"/>
   <rect class="c0_3" x="16" y="68" width="11" height="11" rx="2.5" fill="#161b22"/>
-  <rect class="c0_4" x="16" y="82" width="11" height="11" rx="2.5" fill="#161b22"/>
   <rect class="c1_0" x="30" y="26" width="11" height="11" rx="2.5" fill="#161b22"/>
   <rect class="c1_1" x="30" y="40" width="11" height="11" rx="2.5" fill="#161b22"/>
   <rect class="c1_2" x="30" y="54" width="11" height="11" rx="2.5" fill="#161b22"/>
@@ -1349,6 +1348,7 @@
   <rect class="c52_1" x="744" y="40" width="11" height="11" rx="2.5" fill="#161b22"/>
   <rect class="c52_2" x="744" y="54" width="11" height="11" rx="2.5" fill="#0f4526"/>
   <rect class="c52_3" x="744" y="68" width="11" height="11" rx="2.5" fill="#161b22"/>
+  <rect class="c52_4" x="744" y="82" width="11" height="11" rx="2.5" fill="#161b22"/>
   <text class="snlab" x="16" y="14">sep</text>
   <text class="snlab" x="72" y="14">oct</text>
   <text class="snlab" x="128" y="14">nov</text>
