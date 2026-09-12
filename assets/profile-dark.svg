@@ -243,8 +243,8 @@
 
   <text class="ok d1" x="280" y="210" xml:space="preserve"><tspan class="okb">[ OK ]</tspan>  swe @ western university · 4th year</text>
   <text class="ok d2" x="280" y="232" xml:space="preserve"><tspan class="okb">[ OK ]</tspan>  swe intern @ j.d. power · founder &amp; president @ tethos</text>
-  <text class="ok d3" x="280" y="254" xml:space="preserve"><tspan class="liv">[LIVE]</tspan>  847 contributions past year · 1 day streak</text>
-  <text class="ok d4" x="280" y="276" xml:space="preserve"><tspan class="liv">[LIVE]</tspan>  last push: tsi-website · 3d ago</text>
+  <text class="ok d3" x="280" y="254" xml:space="preserve"><tspan class="liv">[LIVE]</tspan>  851 contributions past year · 1 day streak</text>
+  <text class="ok d4" x="280" y="276" xml:space="preserve"><tspan class="liv">[LIVE]</tspan>  last push: tsi-website · 4d ago</text>
 
   <text class="pr" x="280" y="316">$</text>
   <rect class="cur" x="291" y="305" width="6" height="13" fill="#58a6ff"/>
@@ -779,10 +779,6 @@
 .c51_2 { animation: kc51_2 46.7s linear infinite; }
 @keyframes kc51_3 { 0.0% { fill:#0f4526; } 83.462% { fill:#0f4526; } 83.512% { fill:#c9e4ff; } 83.726% { fill:#79c0ff; } 84.368% { fill:#58a6ff; } 85.653% { fill:#3f83d6; } 88.009% { fill:#2e62a8; } 93.74000000000001% { fill:#2e62a8; } 93.79% { fill:#161b22; } 100% { fill:#161b22; } }
 .c51_3 { animation: kc51_3 46.7s linear infinite; }
-@keyframes kc51_4 { 0.0% { fill:#161b22; } 84.104% { fill:#161b22; } 84.154% { fill:#c9e4ff; } 84.368% { fill:#79c0ff; } 85.011% { fill:#58a6ff; } 86.296% { fill:#3f83d6; } 88.651% { fill:#2e62a8; } 100% { fill:#2e62a8; } }
-.c51_4 { animation: kc51_4 46.7s linear infinite; }
-@keyframes kc51_5 { 0.0% { fill:#161b22; } 84.318% { fill:#161b22; } 84.368% { fill:#c9e4ff; } 84.582% { fill:#79c0ff; } 85.225% { fill:#58a6ff; } 86.51% { fill:#3f83d6; } 88.865% { fill:#2e62a8; } 100% { fill:#2e62a8; } }
-.c51_5 { animation: kc51_5 46.7s linear infinite; }
 @keyframes kc51_6 { 0.0% { fill:#0f4526; } 84.532% { fill:#0f4526; } 84.582% { fill:#c9e4ff; } 84.797% { fill:#79c0ff; } 85.439% { fill:#58a6ff; } 86.724% { fill:#3f83d6; } 89.079% { fill:#2e62a8; } 100% { fill:#2e62a8; } }
 .c51_6 { animation: kc51_6 46.7s linear infinite; }
 @keyframes kc52_0 { 0.0% { fill:#161b22; } 93.74000000000001% { fill:#161b22; } 93.79% { fill:#c9e4ff; } 94.004% { fill:#79c0ff; } 94.647% { fill:#58a6ff; } 95.931% { fill:#3f83d6; } 98.287% { fill:#2e62a8; } 100% { fill:#2e62a8; } }
@@ -795,6 +791,10 @@
 .c52_3 { animation: kc52_3 46.7s linear infinite; }
 @keyframes kc52_4 { 0.0% { fill:#161b22; } 83.89% { fill:#161b22; } 83.94% { fill:#c9e4ff; } 84.154% { fill:#79c0ff; } 84.797% { fill:#58a6ff; } 86.081% { fill:#3f83d6; } 88.437% { fill:#2e62a8; } 94.168% { fill:#2e62a8; } 94.218% { fill:#161b22; } 100% { fill:#161b22; } }
 .c52_4 { animation: kc52_4 46.7s linear infinite; }
+@keyframes kc52_5 { 0.0% { fill:#161b22; } 84.104% { fill:#161b22; } 84.154% { fill:#c9e4ff; } 84.368% { fill:#79c0ff; } 85.011% { fill:#58a6ff; } 86.296% { fill:#3f83d6; } 88.651% { fill:#2e62a8; } 100% { fill:#2e62a8; } }
+.c52_5 { animation: kc52_5 46.7s linear infinite; }
+@keyframes kc52_6 { 0.0% { fill:#0f4526; } 84.318% { fill:#0f4526; } 84.368% { fill:#c9e4ff; } 84.582% { fill:#79c0ff; } 85.225% { fill:#58a6ff; } 86.51% { fill:#3f83d6; } 88.865% { fill:#2e62a8; } 100% { fill:#2e62a8; } }
+.c52_6 { animation: kc52_6 46.7s linear infinite; }
 @keyframes n1 { 0% { opacity:0; } 0.0% { opacity:1; } 1.927% { opacity:0; } 100% { opacity:0; } }
 .n1 { animation: n1 46.7s steps(1,end) infinite; }
 @keyframes n2 { 0% { opacity:0; } 1.927% { opacity:1; } 2.355% { opacity:0; } 100% { opacity:0; } }
@@ -975,17 +975,18 @@
 .n89 { animation: n89 46.7s steps(1,end) infinite; }
 @keyframes n90 { 0% { opacity:0; } 73.662% { opacity:1; } 83.512% { opacity:0; } 100% { opacity:0; } }
 .n90 { animation: n90 46.7s steps(1,end) infinite; }
-@keyframes n91 { 0% { opacity:0; } 83.512% { opacity:1; } 84.582% { opacity:0; } 100% { opacity:0; } }
+@keyframes n91 { 0% { opacity:0; } 83.512% { opacity:1; } 84.368% { opacity:0; } 100% { opacity:0; } }
 .n91 { animation: n91 46.7s steps(1,end) infinite; }
-@keyframes n92 { 0% { opacity:0; } 84.582% { opacity:1; } 94.218% { opacity:0; } 100% { opacity:0; } }
+@keyframes n92 { 0% { opacity:0; } 84.368% { opacity:1; } 84.582% { opacity:0; } 100% { opacity:0; } }
 .n92 { animation: n92 46.7s steps(1,end) infinite; }
-@keyframes n93 { 0% { opacity:0; } 94.218% { opacity:1; } 100% { opacity:1; } }
+@keyframes n93 { 0% { opacity:0; } 84.582% { opacity:1; } 94.218% { opacity:0; } 100% { opacity:0; } }
 .n93 { animation: n93 46.7s steps(1,end) infinite; }
+@keyframes n94 { 0% { opacity:0; } 94.218% { opacity:1; } 100% { opacity:1; } }
+.n94 { animation: n94 46.7s steps(1,end) infinite; }
   </style>
   <rect x="1" y="1" width="769" height="149" rx="12" fill="#0a0e14" stroke="#22406a"/>
     <rect class="c0_0" x="16" y="26" width="11" height="11" rx="2.5" fill="#161b22"/>
   <rect class="c0_1" x="16" y="40" width="11" height="11" rx="2.5" fill="#161b22"/>
-  <rect class="c0_2" x="16" y="54" width="11" height="11" rx="2.5" fill="#161b22"/>
   <rect class="c1_0" x="30" y="26" width="11" height="11" rx="2.5" fill="#161b22"/>
   <rect class="c1_1" x="30" y="40" width="11" height="11" rx="2.5" fill="#161b22"/>
   <rect class="c1_2" x="30" y="54" width="11" height="11" rx="2.5" fill="#161b22"/>
@@ -1349,6 +1350,7 @@
   <rect class="c52_3" x="744" y="68" width="11" height="11" rx="2.5" fill="#161b22"/>
   <rect class="c52_4" x="744" y="82" width="11" height="11" rx="2.5" fill="#161b22"/>
   <rect class="c52_5" x="744" y="96" width="11" height="11" rx="2.5" fill="#161b22"/>
+  <rect class="c52_6" x="744" y="110" width="11" height="11" rx="2.5" fill="#0f4526"/>
   <text class="snlab" x="16" y="14">sep</text>
   <text class="snlab" x="72" y="14">oct</text>
   <text class="snlab" x="128" y="14">nov</text>
@@ -1370,99 +1372,100 @@
   <rect x="679" y="132" width="11" height="11" rx="2.5" fill="#3fdd78"/>
   <text class="snlab" x="701" y="141">more</text>
   <text class="snlab" x="16" y="141">$ commits eaten:</text>
-  <text class="sncnt n1" opacity="0" x="118" y="141">2/847</text>
-  <text class="sncnt n2" opacity="0" x="118" y="141">4/847</text>
-  <text class="sncnt n3" opacity="0" x="118" y="141">5/847</text>
-  <text class="sncnt n4" opacity="0" x="118" y="141">7/847</text>
-  <text class="sncnt n5" opacity="0" x="118" y="141">9/847</text>
-  <text class="sncnt n6" opacity="0" x="118" y="141">13/847</text>
-  <text class="sncnt n7" opacity="0" x="118" y="141">18/847</text>
-  <text class="sncnt n8" opacity="0" x="118" y="141">20/847</text>
-  <text class="sncnt n9" opacity="0" x="118" y="141">25/847</text>
-  <text class="sncnt n10" opacity="0" x="118" y="141">28/847</text>
-  <text class="sncnt n11" opacity="0" x="118" y="141">36/847</text>
-  <text class="sncnt n12" opacity="0" x="118" y="141">37/847</text>
-  <text class="sncnt n13" opacity="0" x="118" y="141">48/847</text>
-  <text class="sncnt n14" opacity="0" x="118" y="141">54/847</text>
-  <text class="sncnt n15" opacity="0" x="118" y="141">56/847</text>
-  <text class="sncnt n16" opacity="0" x="118" y="141">61/847</text>
-  <text class="sncnt n17" opacity="0" x="118" y="141">63/847</text>
-  <text class="sncnt n18" opacity="0" x="118" y="141">86/847</text>
-  <text class="sncnt n19" opacity="0" x="118" y="141">93/847</text>
-  <text class="sncnt n20" opacity="0" x="118" y="141">94/847</text>
-  <text class="sncnt n21" opacity="0" x="118" y="141">95/847</text>
-  <text class="sncnt n22" opacity="0" x="118" y="141">98/847</text>
-  <text class="sncnt n23" opacity="0" x="118" y="141">100/847</text>
-  <text class="sncnt n24" opacity="0" x="118" y="141">101/847</text>
-  <text class="sncnt n25" opacity="0" x="118" y="141">104/847</text>
-  <text class="sncnt n26" opacity="0" x="118" y="141">109/847</text>
-  <text class="sncnt n27" opacity="0" x="118" y="141">113/847</text>
-  <text class="sncnt n28" opacity="0" x="118" y="141">127/847</text>
-  <text class="sncnt n29" opacity="0" x="118" y="141">130/847</text>
-  <text class="sncnt n30" opacity="0" x="118" y="141">131/847</text>
-  <text class="sncnt n31" opacity="0" x="118" y="141">134/847</text>
-  <text class="sncnt n32" opacity="0" x="118" y="141">135/847</text>
-  <text class="sncnt n33" opacity="0" x="118" y="141">147/847</text>
-  <text class="sncnt n34" opacity="0" x="118" y="141">149/847</text>
-  <text class="sncnt n35" opacity="0" x="118" y="141">160/847</text>
-  <text class="sncnt n36" opacity="0" x="118" y="141">173/847</text>
-  <text class="sncnt n37" opacity="0" x="118" y="141">181/847</text>
-  <text class="sncnt n38" opacity="0" x="118" y="141">187/847</text>
-  <text class="sncnt n39" opacity="0" x="118" y="141">191/847</text>
-  <text class="sncnt n40" opacity="0" x="118" y="141">193/847</text>
-  <text class="sncnt n41" opacity="0" x="118" y="141">200/847</text>
-  <text class="sncnt n42" opacity="0" x="118" y="141">223/847</text>
-  <text class="sncnt n43" opacity="0" x="118" y="141">227/847</text>
-  <text class="sncnt n44" opacity="0" x="118" y="141">230/847</text>
-  <text class="sncnt n45" opacity="0" x="118" y="141">231/847</text>
-  <text class="sncnt n46" opacity="0" x="118" y="141">241/847</text>
-  <text class="sncnt n47" opacity="0" x="118" y="141">288/847</text>
-  <text class="sncnt n48" opacity="0" x="118" y="141">298/847</text>
-  <text class="sncnt n49" opacity="0" x="118" y="141">325/847</text>
-  <text class="sncnt n50" opacity="0" x="118" y="141">337/847</text>
-  <text class="sncnt n51" opacity="0" x="118" y="141">339/847</text>
-  <text class="sncnt n52" opacity="0" x="118" y="141">348/847</text>
-  <text class="sncnt n53" opacity="0" x="118" y="141">350/847</text>
-  <text class="sncnt n54" opacity="0" x="118" y="141">353/847</text>
-  <text class="sncnt n55" opacity="0" x="118" y="141">382/847</text>
-  <text class="sncnt n56" opacity="0" x="118" y="141">384/847</text>
-  <text class="sncnt n57" opacity="0" x="118" y="141">401/847</text>
-  <text class="sncnt n58" opacity="0" x="118" y="141">435/847</text>
-  <text class="sncnt n59" opacity="0" x="118" y="141">439/847</text>
-  <text class="sncnt n60" opacity="0" x="118" y="141">469/847</text>
-  <text class="sncnt n61" opacity="0" x="118" y="141">493/847</text>
-  <text class="sncnt n62" opacity="0" x="118" y="141">495/847</text>
-  <text class="sncnt n63" opacity="0" x="118" y="141">497/847</text>
-  <text class="sncnt n64" opacity="0" x="118" y="141">498/847</text>
-  <text class="sncnt n65" opacity="0" x="118" y="141">507/847</text>
-  <text class="sncnt n66" opacity="0" x="118" y="141">513/847</text>
-  <text class="sncnt n67" opacity="0" x="118" y="141">559/847</text>
-  <text class="sncnt n68" opacity="0" x="118" y="141">569/847</text>
-  <text class="sncnt n69" opacity="0" x="118" y="141">579/847</text>
-  <text class="sncnt n70" opacity="0" x="118" y="141">580/847</text>
-  <text class="sncnt n71" opacity="0" x="118" y="141">582/847</text>
-  <text class="sncnt n72" opacity="0" x="118" y="141">588/847</text>
-  <text class="sncnt n73" opacity="0" x="118" y="141">594/847</text>
-  <text class="sncnt n74" opacity="0" x="118" y="141">595/847</text>
-  <text class="sncnt n75" opacity="0" x="118" y="141">596/847</text>
-  <text class="sncnt n76" opacity="0" x="118" y="141">611/847</text>
-  <text class="sncnt n77" opacity="0" x="118" y="141">613/847</text>
-  <text class="sncnt n78" opacity="0" x="118" y="141">622/847</text>
-  <text class="sncnt n79" opacity="0" x="118" y="141">623/847</text>
-  <text class="sncnt n80" opacity="0" x="118" y="141">624/847</text>
-  <text class="sncnt n81" opacity="0" x="118" y="141">651/847</text>
-  <text class="sncnt n82" opacity="0" x="118" y="141">670/847</text>
-  <text class="sncnt n83" opacity="0" x="118" y="141">671/847</text>
-  <text class="sncnt n84" opacity="0" x="118" y="141">672/847</text>
-  <text class="sncnt n85" opacity="0" x="118" y="141">673/847</text>
-  <text class="sncnt n86" opacity="0" x="118" y="141">720/847</text>
-  <text class="sncnt n87" opacity="0" x="118" y="141">739/847</text>
-  <text class="sncnt n88" opacity="0" x="118" y="141">808/847</text>
-  <text class="sncnt n89" opacity="0" x="118" y="141">811/847</text>
-  <text class="sncnt n90" opacity="0" x="118" y="141">816/847</text>
-  <text class="sncnt n91" opacity="0" x="118" y="141">830/847</text>
-  <text class="sncnt n92" opacity="0" x="118" y="141">844/847</text>
-  <text class="sncnt n93" opacity="0" x="118" y="141">847/847</text>
+  <text class="sncnt n1" opacity="0" x="118" y="141">2/851</text>
+  <text class="sncnt n2" opacity="0" x="118" y="141">4/851</text>
+  <text class="sncnt n3" opacity="0" x="118" y="141">5/851</text>
+  <text class="sncnt n4" opacity="0" x="118" y="141">7/851</text>
+  <text class="sncnt n5" opacity="0" x="118" y="141">9/851</text>
+  <text class="sncnt n6" opacity="0" x="118" y="141">13/851</text>
+  <text class="sncnt n7" opacity="0" x="118" y="141">18/851</text>
+  <text class="sncnt n8" opacity="0" x="118" y="141">20/851</text>
+  <text class="sncnt n9" opacity="0" x="118" y="141">25/851</text>
+  <text class="sncnt n10" opacity="0" x="118" y="141">28/851</text>
+  <text class="sncnt n11" opacity="0" x="118" y="141">36/851</text>
+  <text class="sncnt n12" opacity="0" x="118" y="141">37/851</text>
+  <text class="sncnt n13" opacity="0" x="118" y="141">48/851</text>
+  <text class="sncnt n14" opacity="0" x="118" y="141">54/851</text>
+  <text class="sncnt n15" opacity="0" x="118" y="141">56/851</text>
+  <text class="sncnt n16" opacity="0" x="118" y="141">61/851</text>
+  <text class="sncnt n17" opacity="0" x="118" y="141">63/851</text>
+  <text class="sncnt n18" opacity="0" x="118" y="141">86/851</text>
+  <text class="sncnt n19" opacity="0" x="118" y="141">93/851</text>
+  <text class="sncnt n20" opacity="0" x="118" y="141">94/851</text>
+  <text class="sncnt n21" opacity="0" x="118" y="141">95/851</text>
+  <text class="sncnt n22" opacity="0" x="118" y="141">98/851</text>
+  <text class="sncnt n23" opacity="0" x="118" y="141">100/851</text>
+  <text class="sncnt n24" opacity="0" x="118" y="141">101/851</text>
+  <text class="sncnt n25" opacity="0" x="118" y="141">104/851</text>
+  <text class="sncnt n26" opacity="0" x="118" y="141">109/851</text>
+  <text class="sncnt n27" opacity="0" x="118" y="141">113/851</text>
+  <text class="sncnt n28" opacity="0" x="118" y="141">127/851</text>
+  <text class="sncnt n29" opacity="0" x="118" y="141">130/851</text>
+  <text class="sncnt n30" opacity="0" x="118" y="141">131/851</text>
+  <text class="sncnt n31" opacity="0" x="118" y="141">134/851</text>
+  <text class="sncnt n32" opacity="0" x="118" y="141">135/851</text>
+  <text class="sncnt n33" opacity="0" x="118" y="141">147/851</text>
+  <text class="sncnt n34" opacity="0" x="118" y="141">149/851</text>
+  <text class="sncnt n35" opacity="0" x="118" y="141">160/851</text>
+  <text class="sncnt n36" opacity="0" x="118" y="141">173/851</text>
+  <text class="sncnt n37" opacity="0" x="118" y="141">181/851</text>
+  <text class="sncnt n38" opacity="0" x="118" y="141">187/851</text>
+  <text class="sncnt n39" opacity="0" x="118" y="141">191/851</text>
+  <text class="sncnt n40" opacity="0" x="118" y="141">193/851</text>
+  <text class="sncnt n41" opacity="0" x="118" y="141">200/851</text>
+  <text class="sncnt n42" opacity="0" x="118" y="141">223/851</text>
+  <text class="sncnt n43" opacity="0" x="118" y="141">227/851</text>
+  <text class="sncnt n44" opacity="0" x="118" y="141">230/851</text>
+  <text class="sncnt n45" opacity="0" x="118" y="141">231/851</text>
+  <text class="sncnt n46" opacity="0" x="118" y="141">241/851</text>
+  <text class="sncnt n47" opacity="0" x="118" y="141">288/851</text>
+  <text class="sncnt n48" opacity="0" x="118" y="141">298/851</text>
+  <text class="sncnt n49" opacity="0" x="118" y="141">325/851</text>
+  <text class="sncnt n50" opacity="0" x="118" y="141">337/851</text>
+  <text class="sncnt n51" opacity="0" x="118" y="141">339/851</text>
+  <text class="sncnt n52" opacity="0" x="118" y="141">348/851</text>
+  <text class="sncnt n53" opacity="0" x="118" y="141">350/851</text>
+  <text class="sncnt n54" opacity="0" x="118" y="141">353/851</text>
+  <text class="sncnt n55" opacity="0" x="118" y="141">382/851</text>
+  <text class="sncnt n56" opacity="0" x="118" y="141">384/851</text>
+  <text class="sncnt n57" opacity="0" x="118" y="141">401/851</text>
+  <text class="sncnt n58" opacity="0" x="118" y="141">435/851</text>
+  <text class="sncnt n59" opacity="0" x="118" y="141">439/851</text>
+  <text class="sncnt n60" opacity="0" x="118" y="141">469/851</text>
+  <text class="sncnt n61" opacity="0" x="118" y="141">493/851</text>
+  <text class="sncnt n62" opacity="0" x="118" y="141">495/851</text>
+  <text class="sncnt n63" opacity="0" x="118" y="141">497/851</text>
+  <text class="sncnt n64" opacity="0" x="118" y="141">498/851</text>
+  <text class="sncnt n65" opacity="0" x="118" y="141">507/851</text>
+  <text class="sncnt n66" opacity="0" x="118" y="141">513/851</text>
+  <text class="sncnt n67" opacity="0" x="118" y="141">559/851</text>
+  <text class="sncnt n68" opacity="0" x="118" y="141">570/851</text>
+  <text class="sncnt n69" opacity="0" x="118" y="141">580/851</text>
+  <text class="sncnt n70" opacity="0" x="118" y="141">581/851</text>
+  <text class="sncnt n71" opacity="0" x="118" y="141">583/851</text>
+  <text class="sncnt n72" opacity="0" x="118" y="141">589/851</text>
+  <text class="sncnt n73" opacity="0" x="118" y="141">595/851</text>
+  <text class="sncnt n74" opacity="0" x="118" y="141">596/851</text>
+  <text class="sncnt n75" opacity="0" x="118" y="141">597/851</text>
+  <text class="sncnt n76" opacity="0" x="118" y="141">612/851</text>
+  <text class="sncnt n77" opacity="0" x="118" y="141">614/851</text>
+  <text class="sncnt n78" opacity="0" x="118" y="141">623/851</text>
+  <text class="sncnt n79" opacity="0" x="118" y="141">624/851</text>
+  <text class="sncnt n80" opacity="0" x="118" y="141">625/851</text>
+  <text class="sncnt n81" opacity="0" x="118" y="141">652/851</text>
+  <text class="sncnt n82" opacity="0" x="118" y="141">671/851</text>
+  <text class="sncnt n83" opacity="0" x="118" y="141">672/851</text>
+  <text class="sncnt n84" opacity="0" x="118" y="141">673/851</text>
+  <text class="sncnt n85" opacity="0" x="118" y="141">674/851</text>
+  <text class="sncnt n86" opacity="0" x="118" y="141">721/851</text>
+  <text class="sncnt n87" opacity="0" x="118" y="141">740/851</text>
+  <text class="sncnt n88" opacity="0" x="118" y="141">809/851</text>
+  <text class="sncnt n89" opacity="0" x="118" y="141">812/851</text>
+  <text class="sncnt n90" opacity="0" x="118" y="141">817/851</text>
+  <text class="sncnt n91" opacity="0" x="118" y="141">831/851</text>
+  <text class="sncnt n92" opacity="0" x="118" y="141">834/851</text>
+  <text class="sncnt n93" opacity="0" x="118" y="141">848/851</text>
+  <text class="sncnt n94" opacity="0" x="118" y="141">851/851</text>
   <rect x="1" y="1" width="769" height="149" rx="12" fill="none" stroke="#22406a"/>
 </svg><svg x="0" y="1378.7" width="960" height="40.0" viewBox="0 0 960 40">
   <style>@font-face{font-family:'Plex';src:url(data:font/truetype;base64,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) format('truetype');} text{font-family:'Plex',ui-monospace,'SF Mono',Menlo,Consolas,monospace;font-size:15px;}</style>
