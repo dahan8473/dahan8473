@@ -507,7 +507,7 @@
 .c52_1 { animation: kc52_1 38.5s linear infinite; }
 @keyframes kc52_2 { 0.0% { fill:#9be9a8; } 82.288% { fill:#9be9a8; } 82.338% { fill:#033d8b; } 82.597% { fill:#0757b8; } 83.377% { fill:#0969da; } 84.935% { fill:#3d8ae0; } 87.792% { fill:#74aeea; } 92.677% { fill:#74aeea; } 92.727% { fill:#ebedf0; } 100% { fill:#ebedf0; } }
 .c52_2 { animation: kc52_2 38.5s linear infinite; }
-@keyframes kc52_3 { 0.0% { fill:#9be9a8; } 82.547% { fill:#9be9a8; } 82.597% { fill:#033d8b; } 82.857% { fill:#0757b8; } 83.636% { fill:#0969da; } 85.195% { fill:#3d8ae0; } 88.052% { fill:#74aeea; } 92.937% { fill:#74aeea; } 92.987% { fill:#ebedf0; } 100% { fill:#ebedf0; } }
+@keyframes kc52_3 { 0.0% { fill:#30a14e; } 82.547% { fill:#30a14e; } 82.597% { fill:#033d8b; } 82.857% { fill:#0757b8; } 83.636% { fill:#0969da; } 85.195% { fill:#3d8ae0; } 88.052% { fill:#74aeea; } 92.937% { fill:#74aeea; } 92.987% { fill:#ebedf0; } 100% { fill:#ebedf0; } }
 .c52_3 { animation: kc52_3 38.5s linear infinite; }
 @keyframes n1 { 0% { opacity:0; } 0.0% { opacity:1; } 0.779% { opacity:0; } 100% { opacity:0; } }
 .n1 { animation: n1 38.5s steps(1,end) infinite; }
@@ -773,7 +773,6 @@
   <rect class="c0_1" x="16" y="40" width="11" height="11" rx="2.5" fill="#ebedf0"/>
   <rect class="c0_2" x="16" y="54" width="11" height="11" rx="2.5" fill="#ebedf0"/>
   <rect class="c0_3" x="16" y="68" width="11" height="11" rx="2.5" fill="#ebedf0"/>
-  <rect class="c0_4" x="16" y="82" width="11" height="11" rx="2.5" fill="#ebedf0"/>
   <rect class="c1_0" x="30" y="26" width="11" height="11" rx="2.5" fill="#ebedf0"/>
   <rect class="c1_1" x="30" y="40" width="11" height="11" rx="2.5" fill="#ebedf0"/>
   <rect class="c1_2" x="30" y="54" width="11" height="11" rx="2.5" fill="#ebedf0"/>
@@ -1134,7 +1133,8 @@
   <rect class="c52_0" x="744" y="26" width="11" height="11" rx="2.5" fill="#9be9a8"/>
   <rect class="c52_1" x="744" y="40" width="11" height="11" rx="2.5" fill="#9be9a8"/>
   <rect class="c52_2" x="744" y="54" width="11" height="11" rx="2.5" fill="#9be9a8"/>
-  <rect class="c52_3" x="744" y="68" width="11" height="11" rx="2.5" fill="#9be9a8"/>
+  <rect class="c52_3" x="744" y="68" width="11" height="11" rx="2.5" fill="#30a14e"/>
+  <rect class="c52_4" x="744" y="82" width="11" height="11" rx="2.5" fill="#ebedf0"/>
   <text class="snlab" x="16" y="14">oct</text>
   <text class="snlab" x="58" y="14">nov</text>
   <text class="snlab" x="128" y="14">dec</text>
@@ -1156,134 +1156,134 @@
   <rect x="679" y="132" width="11" height="11" rx="2.5" fill="#216e39"/>
   <text class="snlab" x="701" y="141">more</text>
   <text class="snlab" x="16" y="141">$ commits eaten:</text>
-  <text class="sncnt n1" opacity="0" x="118" y="141">4/2619</text>
-  <text class="sncnt n2" opacity="0" x="118" y="141">6/2619</text>
-  <text class="sncnt n3" opacity="0" x="118" y="141">7/2619</text>
-  <text class="sncnt n4" opacity="0" x="118" y="141">9/2619</text>
-  <text class="sncnt n5" opacity="0" x="118" y="141">11/2619</text>
-  <text class="sncnt n6" opacity="0" x="118" y="141">15/2619</text>
-  <text class="sncnt n7" opacity="0" x="118" y="141">38/2619</text>
-  <text class="sncnt n8" opacity="0" x="118" y="141">41/2619</text>
-  <text class="sncnt n9" opacity="0" x="118" y="141">55/2619</text>
-  <text class="sncnt n10" opacity="0" x="118" y="141">62/2619</text>
-  <text class="sncnt n11" opacity="0" x="118" y="141">64/2619</text>
-  <text class="sncnt n12" opacity="0" x="118" y="141">69/2619</text>
-  <text class="sncnt n13" opacity="0" x="118" y="141">74/2619</text>
-  <text class="sncnt n14" opacity="0" x="118" y="141">77/2619</text>
-  <text class="sncnt n15" opacity="0" x="118" y="141">85/2619</text>
-  <text class="sncnt n16" opacity="0" x="118" y="141">86/2619</text>
-  <text class="sncnt n17" opacity="0" x="118" y="141">97/2619</text>
-  <text class="sncnt n18" opacity="0" x="118" y="141">103/2619</text>
-  <text class="sncnt n19" opacity="0" x="118" y="141">105/2619</text>
-  <text class="sncnt n20" opacity="0" x="118" y="141">110/2619</text>
-  <text class="sncnt n21" opacity="0" x="118" y="141">112/2619</text>
-  <text class="sncnt n22" opacity="0" x="118" y="141">113/2619</text>
-  <text class="sncnt n23" opacity="0" x="118" y="141">116/2619</text>
-  <text class="sncnt n24" opacity="0" x="118" y="141">121/2619</text>
-  <text class="sncnt n25" opacity="0" x="118" y="141">123/2619</text>
-  <text class="sncnt n26" opacity="0" x="118" y="141">124/2619</text>
-  <text class="sncnt n27" opacity="0" x="118" y="141">127/2619</text>
-  <text class="sncnt n28" opacity="0" x="118" y="141">129/2619</text>
-  <text class="sncnt n29" opacity="0" x="118" y="141">130/2619</text>
-  <text class="sncnt n30" opacity="0" x="118" y="141">131/2619</text>
-  <text class="sncnt n31" opacity="0" x="118" y="141">134/2619</text>
-  <text class="sncnt n32" opacity="0" x="118" y="141">135/2619</text>
-  <text class="sncnt n33" opacity="0" x="118" y="141">147/2619</text>
-  <text class="sncnt n34" opacity="0" x="118" y="141">151/2619</text>
-  <text class="sncnt n35" opacity="0" x="118" y="141">185/2619</text>
-  <text class="sncnt n36" opacity="0" x="118" y="141">202/2619</text>
-  <text class="sncnt n37" opacity="0" x="118" y="141">226/2619</text>
-  <text class="sncnt n38" opacity="0" x="118" y="141">230/2619</text>
-  <text class="sncnt n39" opacity="0" x="118" y="141">238/2619</text>
-  <text class="sncnt n40" opacity="0" x="118" y="141">268/2619</text>
-  <text class="sncnt n41" opacity="0" x="118" y="141">292/2619</text>
-  <text class="sncnt n42" opacity="0" x="118" y="141">311/2619</text>
-  <text class="sncnt n43" opacity="0" x="118" y="141">313/2619</text>
-  <text class="sncnt n44" opacity="0" x="118" y="141">342/2619</text>
-  <text class="sncnt n45" opacity="0" x="118" y="141">350/2619</text>
-  <text class="sncnt n46" opacity="0" x="118" y="141">352/2619</text>
-  <text class="sncnt n47" opacity="0" x="118" y="141">359/2619</text>
-  <text class="sncnt n48" opacity="0" x="118" y="141">382/2619</text>
-  <text class="sncnt n49" opacity="0" x="118" y="141">386/2619</text>
-  <text class="sncnt n50" opacity="0" x="118" y="141">389/2619</text>
-  <text class="sncnt n51" opacity="0" x="118" y="141">390/2619</text>
-  <text class="sncnt n52" opacity="0" x="118" y="141">417/2619</text>
-  <text class="sncnt n53" opacity="0" x="118" y="141">429/2619</text>
-  <text class="sncnt n54" opacity="0" x="118" y="141">439/2619</text>
-  <text class="sncnt n55" opacity="0" x="118" y="141">486/2619</text>
-  <text class="sncnt n56" opacity="0" x="118" y="141">496/2619</text>
-  <text class="sncnt n57" opacity="0" x="118" y="141">497/2619</text>
-  <text class="sncnt n58" opacity="0" x="118" y="141">499/2619</text>
-  <text class="sncnt n59" opacity="0" x="118" y="141">500/2619</text>
-  <text class="sncnt n60" opacity="0" x="118" y="141">509/2619</text>
-  <text class="sncnt n61" opacity="0" x="118" y="141">528/2619</text>
-  <text class="sncnt n62" opacity="0" x="118" y="141">574/2619</text>
-  <text class="sncnt n63" opacity="0" x="118" y="141">643/2619</text>
-  <text class="sncnt n64" opacity="0" x="118" y="141">662/2619</text>
-  <text class="sncnt n65" opacity="0" x="118" y="141">668/2619</text>
-  <text class="sncnt n66" opacity="0" x="118" y="141">669/2619</text>
-  <text class="sncnt n67" opacity="0" x="118" y="141">671/2619</text>
-  <text class="sncnt n68" opacity="0" x="118" y="141">686/2619</text>
-  <text class="sncnt n69" opacity="0" x="118" y="141">687/2619</text>
-  <text class="sncnt n70" opacity="0" x="118" y="141">734/2619</text>
-  <text class="sncnt n71" opacity="0" x="118" y="141">742/2619</text>
-  <text class="sncnt n72" opacity="0" x="118" y="141">756/2619</text>
-  <text class="sncnt n73" opacity="0" x="118" y="141">776/2619</text>
-  <text class="sncnt n74" opacity="0" x="118" y="141">790/2619</text>
-  <text class="sncnt n75" opacity="0" x="118" y="141">792/2619</text>
-  <text class="sncnt n76" opacity="0" x="118" y="141">806/2619</text>
-  <text class="sncnt n77" opacity="0" x="118" y="141">818/2619</text>
-  <text class="sncnt n78" opacity="0" x="118" y="141">874/2619</text>
-  <text class="sncnt n79" opacity="0" x="118" y="141">932/2619</text>
-  <text class="sncnt n80" opacity="0" x="118" y="141">937/2619</text>
-  <text class="sncnt n81" opacity="0" x="118" y="141">938/2619</text>
-  <text class="sncnt n82" opacity="0" x="118" y="141">939/2619</text>
-  <text class="sncnt n83" opacity="0" x="118" y="141">948/2619</text>
-  <text class="sncnt n84" opacity="0" x="118" y="141">975/2619</text>
-  <text class="sncnt n85" opacity="0" x="118" y="141">977/2619</text>
-  <text class="sncnt n86" opacity="0" x="118" y="141">979/2619</text>
-  <text class="sncnt n87" opacity="0" x="118" y="141">988/2619</text>
-  <text class="sncnt n88" opacity="0" x="118" y="141">990/2619</text>
-  <text class="sncnt n89" opacity="0" x="118" y="141">993/2619</text>
-  <text class="sncnt n90" opacity="0" x="118" y="141">994/2619</text>
-  <text class="sncnt n91" opacity="0" x="118" y="141">995/2619</text>
-  <text class="sncnt n92" opacity="0" x="118" y="141">1001/2619</text>
-  <text class="sncnt n93" opacity="0" x="118" y="141">1003/2619</text>
-  <text class="sncnt n94" opacity="0" x="118" y="141">1014/2619</text>
-  <text class="sncnt n95" opacity="0" x="118" y="141">1024/2619</text>
-  <text class="sncnt n96" opacity="0" x="118" y="141">1077/2619</text>
-  <text class="sncnt n97" opacity="0" x="118" y="141">1080/2619</text>
-  <text class="sncnt n98" opacity="0" x="118" y="141">1084/2619</text>
-  <text class="sncnt n99" opacity="0" x="118" y="141">1086/2619</text>
-  <text class="sncnt n100" opacity="0" x="118" y="141">1114/2619</text>
-  <text class="sncnt n101" opacity="0" x="118" y="141">1115/2619</text>
-  <text class="sncnt n102" opacity="0" x="118" y="141">1116/2619</text>
-  <text class="sncnt n103" opacity="0" x="118" y="141">1137/2619</text>
-  <text class="sncnt n104" opacity="0" x="118" y="141">1140/2619</text>
-  <text class="sncnt n105" opacity="0" x="118" y="141">1144/2619</text>
-  <text class="sncnt n106" opacity="0" x="118" y="141">1158/2619</text>
-  <text class="sncnt n107" opacity="0" x="118" y="141">1172/2619</text>
-  <text class="sncnt n108" opacity="0" x="118" y="141">1173/2619</text>
-  <text class="sncnt n109" opacity="0" x="118" y="141">1193/2619</text>
-  <text class="sncnt n110" opacity="0" x="118" y="141">1261/2619</text>
-  <text class="sncnt n111" opacity="0" x="118" y="141">1291/2619</text>
-  <text class="sncnt n112" opacity="0" x="118" y="141">1293/2619</text>
-  <text class="sncnt n113" opacity="0" x="118" y="141">1294/2619</text>
-  <text class="sncnt n114" opacity="0" x="118" y="141">1326/2619</text>
-  <text class="sncnt n115" opacity="0" x="118" y="141">1351/2619</text>
-  <text class="sncnt n116" opacity="0" x="118" y="141">1436/2619</text>
-  <text class="sncnt n117" opacity="0" x="118" y="141">1494/2619</text>
-  <text class="sncnt n118" opacity="0" x="118" y="141">1513/2619</text>
-  <text class="sncnt n119" opacity="0" x="118" y="141">1558/2619</text>
-  <text class="sncnt n120" opacity="0" x="118" y="141">1840/2619</text>
-  <text class="sncnt n121" opacity="0" x="118" y="141">2023/2619</text>
-  <text class="sncnt n122" opacity="0" x="118" y="141">2045/2619</text>
-  <text class="sncnt n123" opacity="0" x="118" y="141">2259/2619</text>
-  <text class="sncnt n124" opacity="0" x="118" y="141">2388/2619</text>
-  <text class="sncnt n125" opacity="0" x="118" y="141">2509/2619</text>
-  <text class="sncnt n126" opacity="0" x="118" y="141">2542/2619</text>
-  <text class="sncnt n127" opacity="0" x="118" y="141">2616/2619</text>
-  <text class="sncnt n128" opacity="0" x="118" y="141">2618/2619</text>
-  <text class="sncnt n129" opacity="0" x="118" y="141">2619/2619</text>
+  <text class="sncnt n1" opacity="0" x="118" y="141">4/2762</text>
+  <text class="sncnt n2" opacity="0" x="118" y="141">6/2762</text>
+  <text class="sncnt n3" opacity="0" x="118" y="141">7/2762</text>
+  <text class="sncnt n4" opacity="0" x="118" y="141">9/2762</text>
+  <text class="sncnt n5" opacity="0" x="118" y="141">11/2762</text>
+  <text class="sncnt n6" opacity="0" x="118" y="141">15/2762</text>
+  <text class="sncnt n7" opacity="0" x="118" y="141">38/2762</text>
+  <text class="sncnt n8" opacity="0" x="118" y="141">41/2762</text>
+  <text class="sncnt n9" opacity="0" x="118" y="141">55/2762</text>
+  <text class="sncnt n10" opacity="0" x="118" y="141">62/2762</text>
+  <text class="sncnt n11" opacity="0" x="118" y="141">64/2762</text>
+  <text class="sncnt n12" opacity="0" x="118" y="141">69/2762</text>
+  <text class="sncnt n13" opacity="0" x="118" y="141">74/2762</text>
+  <text class="sncnt n14" opacity="0" x="118" y="141">77/2762</text>
+  <text class="sncnt n15" opacity="0" x="118" y="141">85/2762</text>
+  <text class="sncnt n16" opacity="0" x="118" y="141">86/2762</text>
+  <text class="sncnt n17" opacity="0" x="118" y="141">97/2762</text>
+  <text class="sncnt n18" opacity="0" x="118" y="141">103/2762</text>
+  <text class="sncnt n19" opacity="0" x="118" y="141">105/2762</text>
+  <text class="sncnt n20" opacity="0" x="118" y="141">110/2762</text>
+  <text class="sncnt n21" opacity="0" x="118" y="141">112/2762</text>
+  <text class="sncnt n22" opacity="0" x="118" y="141">113/2762</text>
+  <text class="sncnt n23" opacity="0" x="118" y="141">116/2762</text>
+  <text class="sncnt n24" opacity="0" x="118" y="141">121/2762</text>
+  <text class="sncnt n25" opacity="0" x="118" y="141">123/2762</text>
+  <text class="sncnt n26" opacity="0" x="118" y="141">124/2762</text>
+  <text class="sncnt n27" opacity="0" x="118" y="141">127/2762</text>
+  <text class="sncnt n28" opacity="0" x="118" y="141">129/2762</text>
+  <text class="sncnt n29" opacity="0" x="118" y="141">130/2762</text>
+  <text class="sncnt n30" opacity="0" x="118" y="141">131/2762</text>
+  <text class="sncnt n31" opacity="0" x="118" y="141">134/2762</text>
+  <text class="sncnt n32" opacity="0" x="118" y="141">135/2762</text>
+  <text class="sncnt n33" opacity="0" x="118" y="141">147/2762</text>
+  <text class="sncnt n34" opacity="0" x="118" y="141">151/2762</text>
+  <text class="sncnt n35" opacity="0" x="118" y="141">185/2762</text>
+  <text class="sncnt n36" opacity="0" x="118" y="141">202/2762</text>
+  <text class="sncnt n37" opacity="0" x="118" y="141">226/2762</text>
+  <text class="sncnt n38" opacity="0" x="118" y="141">230/2762</text>
+  <text class="sncnt n39" opacity="0" x="118" y="141">238/2762</text>
+  <text class="sncnt n40" opacity="0" x="118" y="141">268/2762</text>
+  <text class="sncnt n41" opacity="0" x="118" y="141">292/2762</text>
+  <text class="sncnt n42" opacity="0" x="118" y="141">311/2762</text>
+  <text class="sncnt n43" opacity="0" x="118" y="141">313/2762</text>
+  <text class="sncnt n44" opacity="0" x="118" y="141">342/2762</text>
+  <text class="sncnt n45" opacity="0" x="118" y="141">350/2762</text>
+  <text class="sncnt n46" opacity="0" x="118" y="141">352/2762</text>
+  <text class="sncnt n47" opacity="0" x="118" y="141">359/2762</text>
+  <text class="sncnt n48" opacity="0" x="118" y="141">382/2762</text>
+  <text class="sncnt n49" opacity="0" x="118" y="141">386/2762</text>
+  <text class="sncnt n50" opacity="0" x="118" y="141">389/2762</text>
+  <text class="sncnt n51" opacity="0" x="118" y="141">390/2762</text>
+  <text class="sncnt n52" opacity="0" x="118" y="141">417/2762</text>
+  <text class="sncnt n53" opacity="0" x="118" y="141">429/2762</text>
+  <text class="sncnt n54" opacity="0" x="118" y="141">439/2762</text>
+  <text class="sncnt n55" opacity="0" x="118" y="141">486/2762</text>
+  <text class="sncnt n56" opacity="0" x="118" y="141">496/2762</text>
+  <text class="sncnt n57" opacity="0" x="118" y="141">497/2762</text>
+  <text class="sncnt n58" opacity="0" x="118" y="141">499/2762</text>
+  <text class="sncnt n59" opacity="0" x="118" y="141">500/2762</text>
+  <text class="sncnt n60" opacity="0" x="118" y="141">509/2762</text>
+  <text class="sncnt n61" opacity="0" x="118" y="141">528/2762</text>
+  <text class="sncnt n62" opacity="0" x="118" y="141">574/2762</text>
+  <text class="sncnt n63" opacity="0" x="118" y="141">643/2762</text>
+  <text class="sncnt n64" opacity="0" x="118" y="141">662/2762</text>
+  <text class="sncnt n65" opacity="0" x="118" y="141">668/2762</text>
+  <text class="sncnt n66" opacity="0" x="118" y="141">669/2762</text>
+  <text class="sncnt n67" opacity="0" x="118" y="141">671/2762</text>
+  <text class="sncnt n68" opacity="0" x="118" y="141">686/2762</text>
+  <text class="sncnt n69" opacity="0" x="118" y="141">687/2762</text>
+  <text class="sncnt n70" opacity="0" x="118" y="141">734/2762</text>
+  <text class="sncnt n71" opacity="0" x="118" y="141">742/2762</text>
+  <text class="sncnt n72" opacity="0" x="118" y="141">756/2762</text>
+  <text class="sncnt n73" opacity="0" x="118" y="141">776/2762</text>
+  <text class="sncnt n74" opacity="0" x="118" y="141">790/2762</text>
+  <text class="sncnt n75" opacity="0" x="118" y="141">792/2762</text>
+  <text class="sncnt n76" opacity="0" x="118" y="141">806/2762</text>
+  <text class="sncnt n77" opacity="0" x="118" y="141">818/2762</text>
+  <text class="sncnt n78" opacity="0" x="118" y="141">874/2762</text>
+  <text class="sncnt n79" opacity="0" x="118" y="141">932/2762</text>
+  <text class="sncnt n80" opacity="0" x="118" y="141">937/2762</text>
+  <text class="sncnt n81" opacity="0" x="118" y="141">938/2762</text>
+  <text class="sncnt n82" opacity="0" x="118" y="141">939/2762</text>
+  <text class="sncnt n83" opacity="0" x="118" y="141">948/2762</text>
+  <text class="sncnt n84" opacity="0" x="118" y="141">975/2762</text>
+  <text class="sncnt n85" opacity="0" x="118" y="141">977/2762</text>
+  <text class="sncnt n86" opacity="0" x="118" y="141">979/2762</text>
+  <text class="sncnt n87" opacity="0" x="118" y="141">988/2762</text>
+  <text class="sncnt n88" opacity="0" x="118" y="141">990/2762</text>
+  <text class="sncnt n89" opacity="0" x="118" y="141">993/2762</text>
+  <text class="sncnt n90" opacity="0" x="118" y="141">994/2762</text>
+  <text class="sncnt n91" opacity="0" x="118" y="141">995/2762</text>
+  <text class="sncnt n92" opacity="0" x="118" y="141">1001/2762</text>
+  <text class="sncnt n93" opacity="0" x="118" y="141">1003/2762</text>
+  <text class="sncnt n94" opacity="0" x="118" y="141">1014/2762</text>
+  <text class="sncnt n95" opacity="0" x="118" y="141">1024/2762</text>
+  <text class="sncnt n96" opacity="0" x="118" y="141">1077/2762</text>
+  <text class="sncnt n97" opacity="0" x="118" y="141">1080/2762</text>
+  <text class="sncnt n98" opacity="0" x="118" y="141">1084/2762</text>
+  <text class="sncnt n99" opacity="0" x="118" y="141">1086/2762</text>
+  <text class="sncnt n100" opacity="0" x="118" y="141">1114/2762</text>
+  <text class="sncnt n101" opacity="0" x="118" y="141">1115/2762</text>
+  <text class="sncnt n102" opacity="0" x="118" y="141">1116/2762</text>
+  <text class="sncnt n103" opacity="0" x="118" y="141">1137/2762</text>
+  <text class="sncnt n104" opacity="0" x="118" y="141">1140/2762</text>
+  <text class="sncnt n105" opacity="0" x="118" y="141">1144/2762</text>
+  <text class="sncnt n106" opacity="0" x="118" y="141">1158/2762</text>
+  <text class="sncnt n107" opacity="0" x="118" y="141">1172/2762</text>
+  <text class="sncnt n108" opacity="0" x="118" y="141">1173/2762</text>
+  <text class="sncnt n109" opacity="0" x="118" y="141">1193/2762</text>
+  <text class="sncnt n110" opacity="0" x="118" y="141">1261/2762</text>
+  <text class="sncnt n111" opacity="0" x="118" y="141">1291/2762</text>
+  <text class="sncnt n112" opacity="0" x="118" y="141">1293/2762</text>
+  <text class="sncnt n113" opacity="0" x="118" y="141">1294/2762</text>
+  <text class="sncnt n114" opacity="0" x="118" y="141">1339/2762</text>
+  <text class="sncnt n115" opacity="0" x="118" y="141">1489/2762</text>
+  <text class="sncnt n116" opacity="0" x="118" y="141">1574/2762</text>
+  <text class="sncnt n117" opacity="0" x="118" y="141">1637/2762</text>
+  <text class="sncnt n118" opacity="0" x="118" y="141">1656/2762</text>
+  <text class="sncnt n119" opacity="0" x="118" y="141">1701/2762</text>
+  <text class="sncnt n120" opacity="0" x="118" y="141">1983/2762</text>
+  <text class="sncnt n121" opacity="0" x="118" y="141">2166/2762</text>
+  <text class="sncnt n122" opacity="0" x="118" y="141">2188/2762</text>
+  <text class="sncnt n123" opacity="0" x="118" y="141">2402/2762</text>
+  <text class="sncnt n124" opacity="0" x="118" y="141">2531/2762</text>
+  <text class="sncnt n125" opacity="0" x="118" y="141">2652/2762</text>
+  <text class="sncnt n126" opacity="0" x="118" y="141">2685/2762</text>
+  <text class="sncnt n127" opacity="0" x="118" y="141">2759/2762</text>
+  <text class="sncnt n128" opacity="0" x="118" y="141">2761/2762</text>
+  <text class="sncnt n129" opacity="0" x="118" y="141">2762/2762</text>
   <rect x="1" y="1" width="769" height="149" rx="12" fill="none" stroke="#d0d7de"/>
 </svg>
